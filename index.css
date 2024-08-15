@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+.custom-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.offcanvas{
+  max-width: 250px;
+}   
+.nav-link.dropdown-toggle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown-toggle::after{
+  margin-left: auto;
+
+}
