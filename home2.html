@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>home2</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  </head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand  fw-bold fs-3" href="#">T<span style="color: red;">ravelo</span></a>
+      </button>
+      <div class="text-end d-flex ">
+        <div>  <a class="btn fs-4" href="register.html">  <i class="fas fa-registered text-red-500"></i>  </a>
+        </div>
+        <div>  <a class="btn fs-4" href="login.html">  <i class="fas fa-user text-red-500"></i>  </a>
+        </div>
+       <div>  <a class="btn fs-4 " data-bs-toggle="offcanvas" href="#offcanvasNavbar" 
+        role="button" aria-controls="#offcanvasNavbar">  <i class="fas fa-bars text-red-500"></i>  </a>
+      </div>
+      </div>
+    
+  
+    </div>
+  </nav>
+  <div class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+     
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-0 py-3">
+          <ul class="navbar-nav justify-content-end flex-grow-1  w-100">
+            <li class="nav-item dropdown w-100">
+              <a class="nav-link dropdown-toggle w-100  bg-green-400 px-3 " href="home1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Home
+              </a>
+              <ul class="dropdown-menu border-0">
+                <li><a class="dropdown-item fw:bold hover:bg-white px-12 hover:text-red-500" href="home1.html">Home1</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="home2.html">Home2</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="home3.html">Home3</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="home4.html">Home4</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="home5.html">Home5</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown w-100 py-2">
+              <a class="nav-link dropdown-toggle w-100  hover:bg-green-400 px-3 " href="package.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Destination
+              </a>
+              <ul class="dropdown-menu border-0">
+                <li><a class="dropdown-item fw:bold hover:bg-white px-12 hover:text-red-500" href="package.html">Destination List</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="package-description.html">Destination Description</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown w-100">
+              <a class="nav-link dropdown-toggle w-100  hover:bg-green-400 px-3 " href="blog.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Blog
+              </a>
+              <ul class="dropdown-menu border-0">
+                <li><a class="dropdown-item fw:bold hover:bg-white px-12 hover:text-red-500" href="blog.html">Blog List</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="blog-detail.html">Single Blog</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown w-100">
+              <a class="nav-link dropdown-toggle w-100  hover:bg-green-400 px-3 " href="hotel.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Hotel
+              </a>
+              <ul class="dropdown-menu border-0">
+                <li><a class="dropdown-item fw:bold hover:bg-white px-12 hover:text-red-500" href="hotel.html">Hotel List</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="view-hotel-detail.html">Hotel Description</a></li>
+              </ul>
+            </li>
+            <li class="nav-item  w-100">
+              <a class="nav-link  w-100  hover:bg-green-400 px-3 " href="gallery.html" role="button" >
+                Gallery
+              </a>
+            </li>
+            <li class="nav-item  w-100">
+              <a class="nav-link  w-100  hover:bg-green-400 px-3 " href="contact.html" role="button">
+                Contact
+              </a>
+            </li>
+            <li class="nav-item  w-100">
+              <a class="nav-link  w-100  hover:bg-green-400 px-3 " href="food.html" role="button">
+                Food
+              </a>
+            </li>
+            <li class="nav-item  w-100">
+              <a class="nav-link  w-100  hover:bg-green-400 px-3 " href="tour-guide.html" role="button">
+                Tour Guide
+              </a>
+            </li>
+          </ul>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="carouselExampleInterval" class="carousel slide mt-1" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active " data-bs-interval="10000">
+        <video src="image/n7.mp4"  class="d-block w-100 "  alt="..."   autoplay muted></video>
+       </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <video src="image/v3.mp4"  class="d-block w-100 "  alt="..."   autoplay muted></video>
+      </div>
+      
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon  bg-dark rounded-1 " aria-hidden="true"></span>
+      <span class="visually-hidden ">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark rounded-1 " aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4 fw-bold" style="font-size: 2rem;">OUR<span style="color: red;"> PACKAGE</span> </h1>
+  </div>
+   
+  <section class="text-gray-600 body-font">
+    <div class="container px-5  mx-auto">
+      <div class="flex flex-col">
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 ">
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6  ">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="image/thailand-.jpg" data-aos="fade-down">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Shooting Stars</h2>
+          <p class="text-base leading-relaxed mt-2">Duration: 2 Hours</p>
+          <p class="text-base leading-relaxed ">Opening: 10am to 10pm</p>
+          <a href="package.html" class="inline-flex text-white bg-red-500 border-0 py-2 px-4 focus:outline-none hover:bg-red-600 rounded text-lg fw-bold mt-3">Read More</a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="image/tower-building.jpg" data-aos="fade-down">
+          </div>
+          
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The Catalyzer</h2>
+          <p class="text-base leading-relaxed mt-2">Duration: 2 Hours</p>
+          <p class="text-base leading-relaxed ">Opening: 10am to 10pm</p>
+          <a href="package.html"class="inline-flex text-white bg-red-500 border-0 py-2 px-4 focus:outline-none hover:bg-red-600 rounded text-lg fw-bold mt-3">Read More</a>
+        </div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="image/t7.jpg" data-aos="fade-down">
+          </div>
+          <h2 class="text-xl font-medium title-font text-gray-900 mt-5">The 400 Blows</h2>
+          <p class="text-base leading-relaxed mt-2">Duration: 2 Hours</p>
+          <p class="text-base leading-relaxed ">Opening: 10am to 10pm</p>
+          <a href="package.html" class="inline-flex text-white bg-red-500 border-0 py-2 px-4 focus:outline-none hover:bg-red-600 rounded text-lg fw-bold mt-3">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section class="text-gray-600 body-font bg-gray-100 mt-8">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center" data-aos="fade-up">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <video class="object-cover object-center rounded" alt="hero" src="image/v3.mp4" controls>
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 fw-bold">Video of zone tour
+          
+        </h1>
+        <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage </p>
+        <div class="flex justify-center">
+          <a href="blog.html" class="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg fw-bold">Read More</a>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-20 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 fs-1 fw-bold">Gallery</h1>
+        
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+      </div>
+      <div class="flex flex-wrap md:-m-2 -m-1">
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="image/t7.jpg" data-aos="zoom-in-up">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="image/architecture-.webp" data-aos="zoom-in-up">
+          </div>
+          <div class="md:p-2 p-1 w-full">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="image/t4.jpg" data-aos="zoom-in-up">
+          </div>
+        </div>
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-full">
+            <img alt="gallery" class="w-full h-full object-cover object-center block" src="image/t8.jpg" data-aos="zoom-in-up">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="image/t9.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img alt="gallery" class="w-full object-cover h-full object-center block" src="image/t11.jpg" data-aos="zoom-in-up">
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="gallery.html" class="inline-flex text-white fw-bold bg-red-500 border-0 py-2 px-6 mt-10  outline-none hover:bg-red-400 rounded">More Gallery</a>
+      </div>
+      </div>
+      </section>
+     
+            <section class="text-gray-600 body-font bg-slate-100 mt-3">
+              <div class="container mx-auto flex flex-col px-5 py-20 justify-center items-center">
+                <div class="w-full md:w-2/3 flex flex-col mb-10 items-center text-center">
+                  <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Subscribe To Our Newsletter For Latest Update</h1>
+                  <div class="flex w-full justify-center items-end">
+                    <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
+                     
+                      <input type="text" id="hero-field" name="hero-field" placeholder="Enter Your Email" class="w-full bg-white  rounded focus:ring-2 focus:ring-indigo-200 focus:bg-transparent border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-2 leading-8 transition-colors duration-200 ease-in-out" data-aos="fade-down">
+                    </div>
+                    <button class="inline-flex text-white bg-red-500 border-0 py-2 px-2  focus:outline-none hover:bg-red-600 rounded text-lg" data-aos="fade-down">Subscribe</button>
+                  </div>
+               
+                
+                </div>
+              </div>
+            </section>
+            <div class="container mt-5">
+              <h1 class="text-center mb-4 fw-bold" style="font-size: 2rem;">OUR<span style="color: red;"> REVIEW</span> </h1>
+            </div>
+            <section class="text-gray-600 body-font">
+              <div class="container px-5 py-20 mx-auto" data-aos="zoom-in">
+                <div class="flex flex-wrap -m-4 bg-white shadow-lg py-15">
+                  <div class="lg:w-1/3 lg:mb-0 mb-6 p-4 ">
+                    <div class="h-full text-center">
+                      <img alt="testimonial" class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="image/pic01.jpg">
+                      <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                      <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                      <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
+                      <p class="text-gray-500">Senior Product Designer</p>
+                    </div>
+                  </div>
+                  <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                    <div class="h-full text-center">
+                      <img alt="testimonial" class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="image/pic03.jpg">
+                      <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                      <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                      <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">ALPER KAMU</h2>
+                      <p class="text-gray-500">UI Develeoper</p>
+                    </div>
+                  </div>
+                  <div class="lg:w-1/3 lg:mb-0 p-4">
+                    <div class="h-full text-center">
+                      <img alt="testimonial" class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="image/pic02.jpg">
+                      <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                      <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                      <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HENRY LETHAM</h2>
+                      <p class="text-gray-500">CTO</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <footer class="text-white body-font bg-slate-400">
+              <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-wrap md:text-left  order-first">
+                  <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
+                    <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Useful Links</h2>
+                    <nav class="list-none mb-10 ">
+                      <li>
+                        <a class=" hover:text-red-500" href="package.html">Destination</a>
+                      </li>
+                      <li>
+                        <a class=" hover:text-red-500" href="hotel.html">Hotel</a>
+                      </li>
+                      <li>
+                        <a class="  hover:text-red-500" href="blog.html">Blog</a>
+                      </li>
+                      <li>
+                        <a class="  hover:text-red-500" href="contact.html">Contact Us</a>
+                      </li>
+                      <li>
+                        <a class="  hover:text-red-500" href="gallery.html" >Gallery</a>
+                      </li>
+                    </nav>
+                  </div>
+                  <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
+                    <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Home</h2>
+                    <nav class="list-none mb-10 ">
+                      <li>
+                        <a class=" hover:text-red-500" href="home1.html">HomePage1</a>
+                      </li>
+                      <li>
+                        <a class=" hover:text-red-500" href="home2.html">HomePage2</a>
+                      </li>
+                      <li>
+                        <a class="  hover:text-red-500" href="home3.html">HomePage3</a>
+                      </li>
+                      <li>
+                        <a class="  hover:text-red-500" href="home4.html">HomePage4</a>
+                      </li>
+                      <li>
+                        <a class="  hover:text-red-500" href="home5.html" >HomePage5</a>
+                      </li>
+                    </nav>
+                  </div>
+                  <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
+                    <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Address</h2>
+                    <nav class="list-none mb-10 ">
+                     <p>Lorem ipsum dolor sit.</p>
+                     <p>+91 4545454546</p>
+                     <p>xys@gmail.com</p>
+                    </nav>
+                  </div>
+                  <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">  <span class=" text-xl text-white fw-bold">T<span style="color: red;">ravelo</span> </span></h2>
+                    <p class="text-white text-md mt-1 md:text-left ">Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-slate-300">
+                <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                  <p class="text-white text-sm text-center sm:text-left fw-bold">© 2024 Travelo —
+                    <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-white ml-1 fw-bold" target="_blank">All Rights Reserved</a>
+                  </p>
+                  <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a class="text-white fw-bold">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-3 text-white fw-bold">
+                      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-3 text-white fw-bold">
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                      </svg>
+                    </a>
+                    <a class="ml-3 text-white fw-bold">
+                      <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </footer>
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ offset: 300,
+      duration: 1000,
+    });
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

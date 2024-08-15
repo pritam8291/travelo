@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detail</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <style>
+      .card-img-overlay{
+        top: 50%;
+        left: 50%;  
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand  fw-bold fs-3" href="#">T<span style="color: red;">ravelo</span></a>
+      </button>
+      <div class="text-end d-flex ">
+        <div>  <a class="btn fs-4" href="register.html">  <i class="fas fa-registered text-red-500"></i>  </a>
+        </div>
+        <div>  <a class="btn fs-4" href="login.html">  <i class="fas fa-user text-red-500"></i>  </a>
+        </div>
+       <div>  <a class="btn fs-4 " data-bs-toggle="offcanvas" href="#offcanvasNavbar" 
+        role="button" aria-controls="#offcanvasNavbar">  <i class="fas fa-bars text-red-500"></i>  </a>
+      </div>
+      </div>
+    
+  
+    </div>
+  </nav>
+  <div class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+     
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-0 py-3">
+          <ul class="navbar-nav justify-content-end flex-grow-1  w-100">
+            <li class="nav-item dropdown w-100">
+              <a class="nav-link dropdown-toggle w-100  bg-green-400 px-3 " href="home1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Home
+              </a>
+              <ul class="dropdown-menu border-0">
+                <li><a class="dropdown-item fw:bold hover:bg-white px-12 hover:text-red-500" href="home1.html">Home1</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="home2.html">Home2</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="home3.html">Home3</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="home4.html">Home4</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="home5.html">Home5</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown w-100 py-2">
+              <a class="nav-link dropdown-toggle w-100  hover:bg-green-400 px-3 " href="package.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Destination
+              </a>
+              <ul class="dropdown-menu border-0">
+                <li><a class="dropdown-item fw:bold hover:bg-white px-12 hover:text-red-500" href="package.html">Destination List</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="package-description.html">Destination Description</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown w-100">
+              <a class="nav-link dropdown-toggle w-100  hover:bg-green-400 px-3 " href="blog.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Blog
+              </a>
+              <ul class="dropdown-menu border-0">
+                <li><a class="dropdown-item fw:bold hover:bg-white px-12 hover:text-red-500" href="blog.html">Blog List</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="blog-detail.html">Single Blog</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown w-100">
+              <a class="nav-link dropdown-toggle w-100  hover:bg-green-400 px-3 " href="hotel.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Hotel
+              </a>
+              <ul class="dropdown-menu border-0">
+                <li><a class="dropdown-item fw:bold hover:bg-white px-12 hover:text-red-500" href="hotel.html">Hotel List</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="view-hotel-detail.html">Hotel Description</a></li>
+              </ul>
+            </li>
+            <li class="nav-item  w-100">
+              <a class="nav-link  w-100  hover:bg-green-400 px-3 " href="gallery.html" role="button" >
+                Gallery
+              </a>
+            </li>
+            <li class="nav-item  w-100">
+              <a class="nav-link  w-100  hover:bg-green-400 px-3 " href="contact.html" role="button">
+                Contact
+              </a>
+            </li>
+            <li class="nav-item  w-100">
+              <a class="nav-link  w-100  hover:bg-green-400 px-3 " href="food.html" role="button">
+                Food
+              </a>
+            </li>
+            <li class="nav-item  w-100">
+              <a class="nav-link  w-100  hover:bg-green-400 px-3 " href="tour-guide.html" role="button">
+                Tour Guide
+              </a>
+            </li>
+          </ul>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+      <div class="card ">
+        <img src="image/ocean-7890172_1280.jpg" class="card-img h" alt="..." style="width: 100%; height: 350px; opacity: 0.9;">
+        <div class="card-img-overlay ">
+          <h5 class="card-title  text-white fw-bold  text-5xl mt-8">Blog Detail</h5>
+        </div>
+      </div>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+          <div class="lg:w-2/3 mx-auto">
+            <h1 class="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900 fw-bold text-uppercase">Lorem ipsum dolor sit amet consectetur.</h1>
+            <p class="fw-bold mb-3">05 Aug 2024 &nbsp; [Singapore]</p>
+            <p class="mb-8 leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi deleniti ducimus fugiat obcaecati eligendi atque illum vero! Consequatur fugit iste veniam quia nobis nisi placeat veritatis, minus eum mollitia!
+                Sequi a voluptates laboriosam maiores quisquam reiciendis, atque vel aperiam nemo repellat dolor cupiditate quidem dolore tempore explicabo ratione eos excepturi tenetur! Sapiente dignissimos neque animi officiis blanditiis quis aspernatur.</p>
+            <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
+              <img alt="gallery" class="w-full  h-full object-center block  absolute inset-0" src="image/skyscrapers-.jpg"> 
+            </div>
+            
+              <p class="mb-8 leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi deleniti ducimus fugiat obcaecati eligendi atque illum vero! Consequatur fugit iste veniam quia nobis nisi placeat veritatis, minus eum mollitia!
+              Sequi a voluptates laboriosam maiores quisquam reiciendis, atque vel aperiam nemo repellat dolor cupiditate quidem dolore tempore explicabo ratione eos excepturi tenetur! Sapiente dignissimos neque animi officiis blanditiis quis aspernatur.</p>
+              <p class="mb-8 leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi deleniti ducimus fugiat obcaecati eligendi atque illum vero! Consequatur fugit iste veniam quia nobis nisi placeat veritatis, minus eum mollitia!
+                Sequi a voluptates laboriosam maiores quisquam reiciendis, atque vel aperiam nemo repellat dolor cupiditate quidem dolore tempore explicabo ratione eos excepturi tenetur! Sapiente dignissimos neque animi officiis blanditiis quis aspernatur.</p>
+              <p class="mb-8 leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi deleniti ducimus fugiat obcaecati eligendi atque illum vero! Consequatur fugit iste veniam quia nobis nisi placeat veritatis, minus eum mollitia!
+                    Sequi a voluptates laboriosam maiores quisquam reiciendis, atque vel aperiam nemo repellat dolor cupiditate quidem dolore tempore explicabo ratione eos excepturi tenetur! Sapiente dignissimos neque animi officiis blanditiis quis aspernatur.</p>
+              </div>
+            </div>
+      </section>
+      <div class="container">
+        <div class="border-t border-gray-200 mt-5">
+        </div>
+      </div>
+      <div class="container px-5  mx-auto flex flex-wrap">
+        <div class="lg:w-2/3  mx-auto ">
+            <h1 class="title-font sm:text-xl text-xl mb-3 font-medium text-gray-900 fw-bold mt-3">10 COMMENTS</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="border-t border-gray-200 mt-2">
+        </div>
+      </div>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-15 mx-auto flex flex-col">
+          <div class="lg:w-4/6 mx-auto">
+            
+            <div class="flex flex-col sm:flex-row mt-10">
+              <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                <div class="w-24 h-24 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                   
+                        <img src="image/pic01.jpg" class="rounded-full" alt="">
+                    
+                </div>
+                <div class="flex flex-col items-center text-center justify-center">
+                  <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Phoebe Caulfield</h2>
+                  <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                </div>
+              </div>
+              <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0  sm:text-left">
+                <p class="text-base">December 10,2024 &nbsp;&nbsp;&nbsp; 11:06 PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-500">REPLY</span></p>
+                <p class="leading-relaxed text-lg mb-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eius a? Doloribus, iure aperiam vel et consequuntur, reiciendis eius maiores quisquam hic eaque perferendis ut perspiciatis sed nam id officia?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-15 mx-auto flex flex-col">
+          <div class="lg:w-4/6 mx-auto">
+            
+            <div class="flex flex-col sm:flex-row mt-10">
+              <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                <div class="w-24 h-24 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                   
+                        <img src="image/pic03.jpg" class="rounded-full" alt="">
+                    
+                </div>
+                <div class="flex flex-col items-center text-center justify-center">
+                  <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Hover field</h2>
+                  <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                </div>
+              </div>
+              <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0  sm:text-left">
+                <p class="text-base">January 15,2025 &nbsp;&nbsp;&nbsp; 1:06 PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-500">REPLY</span></p>
+                <p class="leading-relaxed text-lg mb-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eius a? Doloribus, iure aperiam vel et consequuntur, reiciendis eius maiores quisquam hic eaque perferendis ut perspiciatis sed nam id officia?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-15 mx-auto flex flex-col">
+        <div class="lg:w-4/6 mx-auto">
+          
+          <div class="flex flex-col sm:flex-row mt-10">
+            <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+              <div class="w-24 h-24 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                 
+                      <img src="image/pic02.jpg" class="rounded-full" alt="">
+                  
+              </div>
+              <div class="flex flex-col items-center text-center justify-center">
+                <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Marry Caul</h2>
+                <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+              </div>
+            </div>
+            <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0  sm:text-left">
+              <p class="text-base">February 25,2024 &nbsp;&nbsp;&nbsp; 10:06 AM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-500">REPLY</span></p>
+              <p class="leading-relaxed text-lg mb-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eius a? Doloribus, iure aperiam vel et consequuntur, reiciendis eius maiores quisquam hic eaque perferendis ut perspiciatis sed nam id officia?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="border-t border-gray-200 mt-5">
+      </div>
+    </div>
+   
+    <section class="text-gray-600 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Leave a Comment</h1>
+          </div>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="name" class="leading-7 text-sm text-gray-600">First Name</label>
+                  <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label for="lname" class="leading-7 text-sm text-gray-600">Last Name</label>
+                  <input type="text" id="lname" name="lname" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                  <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                  <textarea id="message" name="message"  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <button class="flex mx-auto text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="text-white body-font bg-slate-400">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap md:text-left  order-first">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
+              <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Useful Links</h2>
+              <nav class="list-none mb-10 ">
+                <li>
+                  <a class=" hover:text-red-500" href="package.html">Destination</a>
+                </li>
+                <li>
+                  <a class=" hover:text-red-500" href="hotel.html">Hotel</a>
+                </li>
+                <li>
+                  <a class="  hover:text-red-500" href="blog.html">Blog</a>
+                </li>
+                <li>
+                  <a class="  hover:text-red-500" href="contact.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="  hover:text-red-500" href="gallery.html" >Gallery</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
+              <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Home</h2>
+              <nav class="list-none mb-10 ">
+                <li>
+                  <a class=" hover:text-red-500" href="home1.html">HomePage1</a>
+                </li>
+                <li>
+                  <a class=" hover:text-red-500" href="home2.html">HomePage2</a>
+                </li>
+                <li>
+                  <a class="  hover:text-red-500" href="home3.html">HomePage3</a>
+                </li>
+                <li>
+                  <a class="  hover:text-red-500" href="home4.html">HomePage4</a>
+                </li>
+                <li>
+                  <a class="  hover:text-red-500" href="home5.html" >HomePage5</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
+              <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Address</h2>
+              <nav class="list-none mb-10 ">
+               <p>Lorem ipsum dolor sit.</p>
+               <p>+91 4545454546</p>
+               <p>xys@gmail.com</p>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">  <span class=" text-xl text-white fw-bold">T<span style="color: red;">ravelo</span> </span></h2>
+              <p class="text-white text-md mt-1 md:text-left ">Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-slate-300">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-white text-sm text-center sm:text-left fw-bold">© 2024 Travelo —
+              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-white ml-1 fw-bold" target="_blank">All Rights Reserved</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="text-white fw-bold">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-white fw-bold">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-white fw-bold">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-white fw-bold">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+</body>
+</html>
