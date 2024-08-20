@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home 1</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="image/favicon-32x32.png" type="image/jpeg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 <style>
     .card-img-overlay{
@@ -17,31 +21,34 @@
         text-align: center;
     }
  
- 
 </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand  fw-bold fs-3" href="#">T<span style="color: red;">ravelo</span></a>
-      </button>
+      <a class="navbar-brand  fw-bold fs-3" href="home1.html">T<span style="color: red;">ravelo</span></a>
       <div class="text-end d-flex ">
-        <div>  <a class="btn fs-4" href="register.html">  <i class="fas fa-registered text-red-500"></i>  </a>
+        <div>
+          <a class="btn fs-4" href="register.html">
+            <i class="fas fa-registered text-red-500"></i>
+          </a>
         </div>
-        <div>  <a class="btn fs-4" href="login.html">  <i class="fas fa-user text-red-500"></i>  </a>
+        <div>
+          <a class="btn fs-4" href="login.html">
+            <i class="fas fa-user text-red-500"></i>
+          </a>
         </div>
-       <div>  <a class="btn fs-4 " data-bs-toggle="offcanvas" href="#offcanvasNavbar" 
-        role="button" aria-controls="#offcanvasNavbar">  <i class="fas fa-bars text-red-500"></i>  </a>
+       <div>
+        <a class="btn fs-4 " data-bs-toggle="offcanvas" href="#offcanvasNavbar" role="button" aria-controls="offcanvasNavbar">
+          <i class="fas fa-bars text-red-500"></i>
+        </a>
       </div>
       </div>
-    
-  
     </div>
   </nav>
-  <div class="navbar bg-body-tertiary fixed-top">
+  <div class="navbar bg-body-tertiary">
     <div class="container-fluid">
-     
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
         <div class="offcanvas-header">
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -106,101 +113,115 @@
                 Tour Guide
               </a>
             </li>
+            <li class="nav-item dropdown w-100">
+              <a class="nav-link dropdown-toggle w-100  hover:bg-green-400 px-3 " href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu border-0">
+                <li><a class="dropdown-item fw:bold hover:bg-white px-12 hover:text-red-500" href="packagepage.html">Package Type</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="button.html">Button</a></li>
+              </ul>
+            </li>
           </ul>
          
         </div>
       </div>
     </div>
   </div>
-      <div class="card ">
-        <img src="image/t4.jpg" class="card-img h" alt="..." style="width: 100%; height: 700px; opacity: 0.9;">
+      <div class="card mt-5">
+        <img src="image/t4.jpg" class="card-img h" alt="hero" style="width: 100%; height: 700px;">
         <div class="card-img-overlay ">
-          <h5 class="card-title  text-white fw-bold fs-2  ">BIG ADVENTURES IN SMALL PACKAGES</h5>
-          <p class="card-text text-white py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit  amet consectetur adipisicing elit.</p>
-          <a href="#" class="btn btn-primary text-white fw-bold px-5">Explore Now</a>
+          <h5 class="card-title  text-white fw-bold lg:text-3xl text-xl  ">BIG ADVENTURE IN SMALL PACKAGES</h5>
+          <p class="card-text text-white py-3">Travel with us and explore the world's wonders.</p>
+          <a href="#" class="btn btn-primary text-white fw-bold px-5">Explore</a>
         </div>
       </div>
-   
+      <form  id="myform" onsubmit="return validateform(event)" method="post">
   <section class="text-white body-font bg-slate-600 bg-white shadow-lg">
-    <div class="container px-5 py-20 mx-auto  flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="container px-4 py-20 mx-auto  flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
-        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-          <button class="inline-flex text-white fw-bold bg-rose-500 border-0 py-2 px-6 mt-12 focus:outline-none hover:bg-rose-400 rounded">Inquiry Now</button>
-
-        </a>
+        <div class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <button class="inline-flex text-white fw-bold bg-red-500 border-0 py-2 px-6 mt-12 focus:outline-none hover:bg-red-400 rounded">Inquiry Now</button>
+         </div>
       </div>
       <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+      
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2 class="title-font font-medium text-black tracking-widest text-sm mb-3 fw-bold">Search Destination*</h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">
-                <input type="text" id="full-name" name="full-name" placeholder="Enter Destination" class="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-            </a>
-            </li>
-          </nav>
+          <div class="list-none mb-10">
+            <div>
+              <div class="text-gray-600 hover:text-gray-800">
+                <input type="text" id="destinations" name="destinations" placeholder="Enter Destination" class="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" oninput="validatename()">
+                <span id="nameerror" class="text-red-500"></span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2 class="title-font font-medium text-black tracking-widest text-sm mb-3 fw-bold">Pax Number*</h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-600 hover:text-gray-800"> 
-                <input type="text" id="full-name" name="full-name" placeholder="No.of People" class="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></a>
-            </li>
-          </nav>
+          <div class="list-none mb-10">
+            <div>
+              <div class="text-gray-600 hover:text-gray-800"> 
+                <input type="text" id="pax-number" name="pax-number" placeholder="No.of People" class="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" oninput="validatenumber()">
+                <span id="numbererror" class="text-red-500"></span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2 class="title-font font-medium text-black tracking-widest text-sm mb-3 fw-bold">Checking Date*</h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">
-                <input type="Date" id="full-name" name="full-name" class="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-            </a>
-            </li>
-          </nav>
+          <div class="list-none mb-10">
+            <div>
+              <div class="text-gray-600 hover:text-gray-800">
+                <input type="Date" id="checkin" name="checkin" class="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" oninput="validatecheckin()">
+                <span id="checkinerror" class="text-red-500"></span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2 class="title-font font-medium text-black tracking-widest text-sm mb-3 fw-bold">Checkout Date*</h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">
-                <input type="Date" id="full-name" name="full-name" class="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-            </a>
-            </li>
-          </nav>
+          <div class="list-none mb-10">
+            <div>
+              <div class="text-gray-600 hover:text-gray-800">
+                <input type="Date" id="checkout" name="checkout" class="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" oninput="validatecheckout()">
+                <span id="checkouterror" class="text-red-500"></span>
+              </div>
+            </div>
+          </div>
         </div>
+      
       </div>
     </div>
   
   </section>
+  </form>
   <section class="text-gray-600 body-font">
     <div class="container px-5 py-12 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
           <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 fs-1">Top Famous Destination</h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base mt-2">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base ">Exploring the world one destination at a time, sharing stories and tips for the curious traveler.</p>
         </div>
-        <section class="text-gray-600 body-font">
-          <div class="container px-5 py-15 mx-auto">
+       
             <div class="flex flex-wrap -mx-4 -mb-10 text-center">
               <div class="sm:w-1/2 mb-10 px-4">
                 <div class="rounded-lg h-64 overflow-hidden">
-                  <img alt="content" class="object-cover object-center h-full w-full" src="image/tower-building.jpg" data-aos="zoom-in-up">
+                  <img alt="content1" class="object-cover object-center h-full w-full" src="image/t11.jpg" data-aos="fade-up">
                 </div>
-                <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">China</h2>
-                <p class="leading-relaxed text-base">Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.</p>
-                <a href="package.html" class="inline-flex mx-auto mt-6 text-white bg-rose-500 border-0 py-2 px-5 focus:outline-none hover:bg-rose-600 rounded fw-bold">View More</a>
+                <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Sydney Opera House</h2>
+                <p class="leading-relaxed text-base">The Sydney Opera House is a world-renowned performing arts center featuring a distinctive sail-like design and stunning harbor setting.</p>
+                <button class="flex mx-auto mt-6 text-white bg-red-500 border-0 py-2 px-5 focus:outline-none hover:bg-red-600 rounded fw-bold">View Detail</button>
               </div>
-              <div class="sm:w-1/2 mb-10 px-4 ">
-                <div class="rounded-lg h-64 overflow-hidden">
-                  <img alt="content" class="object-cover object-center h-full w-full" src="image/t11.jpg" data-aos="zoom-in-up">
+                <div class="sm:w-1/2 mb-10 px-4">
+                  <div class="rounded-lg h-64 overflow-hidden">
+                    <img alt="content2" class="object-cover object-center h-full w-full" src="image/t7.jpg" data-aos="fade-down">
+                  </div>
+                  <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Rialto Bridge,Venezia</h2>
+                  <p class="leading-relaxed text-base">This majestic landmark connects the districts of San Marco and San Polo, featuring a central portico with shops and markets.</p>
+                  <button class="flex mx-auto mt-6 text-white bg-red-500 border-0 py-2 px-5 focus:outline-none hover:bg-red-600 rounded fw-bold">View Detail</button>
                 </div>
-                <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Sydney</h2>
-                <p class="leading-relaxed text-base">Williamsburg occupy sustainable snackwave gochujang. Pinterest cornhole brunch, slow-carb neutra irony.</p>
-                <a href="package.html"  class="inline-flex mx-auto mt-6 text-white bg-rose-500 border-0 py-2 px-5 focus:outline-none hover:bg-rose-600 rounded fw-bold">View More</a>
-              </div>
             </div>
-          </div>
-        </section>
+         
 </div>
   </section>
   <section class="text-gray-600 body-font">
@@ -214,47 +235,47 @@
       </div>
       <div class="flex flex-wrap -m-4">
         <div class="xl:w-1/4 md:w-1/2 p-4">
-          <div class="bg-slate-50 p-6 rounded-lg">
+          <div class="bg-gray-50 p-6 rounded-lg">
             <img class="h-40 rounded w-full object-cover object-center mb-6" src="image/bed-4416515_1280.jpg" data-aos="fade-zoom-in"
             data-aos-easing="ease-in-back"
             data-aos-delay="300"
-            data-aos-offset="0" alt="content">
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
-            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-            <a href="view-hotel-detail.html" class="inline-flex text-white fw-bold bg-rose-500 border-0 py-2 px-6 mt-3  outline-none hover:bg-rose-400 rounded">Book Now</a>
+            data-aos-offset="0" alt="hotel1">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Belmond Hotel Cipriani</h2>
+            <p class="leading-relaxed text-base">Belmond Hotel Cipriani is a luxurious Venetian palace hotel located on the island of Giudecca, offering stunning views.</p>
+            <a href="view-hotel-detail.html" class="inline-flex text-white fw-bold bg-red-500 border-0 py-2 px-6 mt-3  outline-none hover:bg-red-400 rounded">Book Now</a>
         </div>
         </div>
         <div class="xl:w-1/4 md:w-1/2 p-4">
-          <div class="bg-slate-50 p-6 rounded-lg">
-            <img class="h-40 rounded w-full object-cover object-center mb-6" src="image/bedroom-5664221_640.jpg" alt="content" data-aos="fade-zoom-in"
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="image/bedroom-5664221_640.jpg" alt="hotel2" data-aos="fade-zoom-in"
             data-aos-easing="ease-in-back"
             data-aos-delay="300"
             data-aos-offset="0">
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
-            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-            <a href="view-hotel-detail.html" class="inline-flex text-white fw-bold bg-rose-500 border-0 py-2 px-6 mt-3  outline-none hover:bg-rose-400 rounded">Book Now</a>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">The Gritti Palace</h2>
+            <p class="leading-relaxed text-base">The Gritti Palace is a 5-star hotel situated on the Grand Canal, offering luxurious accommodations and unparalleled service.</p>
+            <a href="view-hotel-detail.html" class="inline-flex text-white fw-bold bg-red-500 border-0 py-2 px-6 mt-3  outline-none hover:bg-red-400 rounded">Book Now</a>
           </div>
         </div>
         <div class="xl:w-1/4 md:w-1/2 p-4">
-          <div class="bg-slate-50 p-6 rounded-lg">
-            <img class="h-40 rounded w-full object-cover object-center mb-6" src="image/hotel-room-5858069_640.jpg" alt="content" data-aos="fade-zoom-in"
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="image/hotel-room-5858069_640.jpg" alt="hotel3" data-aos="fade-zoom-in"
             data-aos-easing="ease-in-back"
             data-aos-delay="300"
             data-aos-offset="0">
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
-            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-            <a href="view-hotel-detail.html" class="inline-flex text-white fw-bold bg-rose-500 border-0 py-2 px-6 mt-3  outline-none hover:bg-rose-400 rounded">Book Now</a>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4"> Hotel Danieli</h2>
+            <p class="leading-relaxed text-base">Hotel Danieli is a luxurious hotel located in the heart of Venice, offering elegant rooms and suites with stunning views of the lagoon. </p>
+            <a href="view-hotel-detail.html" class="inline-flex text-white fw-bold bg-red-500 border-0 py-2 px-6 mt-3  outline-none hover:bg-red-400 rounded">Book Now</a>
           </div>
         </div>
         <div class="xl:w-1/4 md:w-1/2 p-4">
-          <div class="bg-slate-50 p-6 rounded-lg">
-            <img class="h-40 rounded w-full object-cover object-center mb-6" src="image/lobby-398845_640.jpg" alt="content" data-aos="fade-zoom-in"
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="image/lobby-398845_640.jpg" alt="hotel4" data-aos="fade-zoom-in"
             data-aos-easing="ease-in-back"
             data-aos-delay="300"
             data-aos-offset="0">
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
-            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-            <a href="view-hotel-detail.html" class="inline-flex text-white fw-bold bg-rose-500 border-0 py-2 px-6 mt-3  outline-none hover:bg-rose-400 rounded">Book Now</a>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Ca' Sagredo Hotel</h2>
+            <p class="leading-relaxed text-base">Ca' Sagredo Hotel is a 5-star hotel located in a 14th-century palace on the Grand Canal, offering luxurious accommodations. </p>
+            <a href="view-hotel-detail.html" class="inline-flex text-white fw-bold bg-red-500 border-0 py-2 px-6 mt-3  outline-none hover:bg-red-400 rounded">Book Now</a>
           </div>
         </div>
       </div>
@@ -265,44 +286,43 @@
       <div class="flex flex-col text-center w-full mb-20">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 fs-1 fw-bold">Gallery</h1>
         
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Where wanderlust meets wonder, join me on a journey of discovery and exploration.</p>
       </div>
       <div class="flex flex-wrap md:-m-2 -m-1">
         <div class="flex flex-wrap w-1/2">
           <div class="md:p-2 p-1 w-1/2">
-            <img alt="gallery" class="w-full object-cover h-full object-center block" src="image/thailand-.jpg" data-aos="zoom-in-up">
+            <img alt="gallery1" class="w-full object-cover h-full object-center block" src="image/thailand-.jpg" data-aos="zoom-in-up">
           </div>
           <div class="md:p-2 p-1 w-1/2">
-            <img alt="gallery" class="w-full object-cover h-full object-center block" src="image/ocean-7890172_1280.jpg" data-aos="zoom-in-up">
+            <img alt="gallery2" class="w-full object-cover h-full object-center block" src="image/ocean-7890172_1280.jpg" data-aos="zoom-in-up">
           </div>
           <div class="md:p-2 p-1 w-full">
-            <img alt="gallery" class="w-full h-full object-cover object-center block" src="image/t11.jpg" data-aos="zoom-in-up">
+            <img alt="gallery3" class="w-full h-full object-cover object-center block" src="image/t11.jpg" data-aos="zoom-in-up">
           </div>
         </div>
         <div class="flex flex-wrap w-1/2">
           <div class="md:p-2 p-1 w-full">
-            <img alt="gallery" class="w-full h-full object-cover object-center block" src="image/maldive.avif" data-aos="zoom-in-up">
+            <img alt="gallery4" class="w-full h-full object-cover object-center block" src="image/maldive.avif" data-aos="zoom-in-up">
           </div>
           <div class="md:p-2 p-1 w-1/2">
-            <img alt="gallery" class="w-full object-cover h-full object-center block" src="image/moscow.jpg" data-aos="zoom-in-up">
+            <img alt="gallery5" class="w-full object-cover h-full object-center block" src="image/moscow.jpg" data-aos="zoom-in-up">
           </div>
           <div class="md:p-2 p-1 w-1/2">
-            <img alt="gallery" class="w-full object-cover h-full object-center block" src="image/tower-building.jpg" data-aos="zoom-in-up">
+            <img alt="gallery6" class="w-full object-cover h-full object-center block" src="image/tower-building.jpg" data-aos="zoom-in-up">
           </div>
         </div>
       </div>
       <div class="text-center">
-        <a href="gallery.html" class="inline-flex text-white fw-bold bg-rose-500 border-0 py-2 px-6 mt-10  outline-none hover:bg-rose-400 rounded">More Gallery</a>
+        <a href="gallery.html" class="inline-flex text-white fw-bold bg-red-500 border-0 py-2 px-6 mt-10  outline-none hover:bg-red-400 rounded">More Gallery</a>
       </div>
       </div>
       </section>
-          <section class="text-gray-600 body-font bg-sky-500">
+          <section class="text-gray-600 body-font bg-blue-600">
             <div class="container px-5 py-12 mx-auto" data-aos="fade-up">
               <div class="flex flex-wrap w-full mb-8">
                 <div class="flex flex-col text-center w-full mb-2">
                     <h1 class="sm:text-3xl text-2xl font-medium title-font mb-1 text-gray-900 fs-1 text-white fw-bold">GO TRAVEL, DISCOVER, REMEMBER US!!</h1>
                 </div>
-                <p class="lg:w-1/2 w-full leading-relaxed text-gray-500 mx-auto mt-2 text-white">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
                 </div>
                 <div class="flex flex-wrap -m-4 text-center">
                     <div class="p-4 sm:w-1/4 w-1/2">
@@ -328,33 +348,33 @@
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-20">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 fs-1 fw-bold">ADVENTURE & ACTIVITY</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Escape the ordinary and explore the extraordinary, with travel tales, tips, and inspiration.</p>
           </div>
           <div class="flex flex-wrap -m-4 text-center">
             <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos="fade-down">
               <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                <i class="fas fa-compass fs-1 text-sky-500"></i>
+                <i class="fas fa-compass fs-1 text-blue-600"></i>
                 <h3 class="title-font font-medium text-1xl text-gray-900 fw-bold">Adventure</h3>
                 <p class="leading-relaxed">20 Destination</p>
               </div>
             </div>
             <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos="fade-down">
               <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                <i class="fas fa-fire fs-1 text-sky-500"></i>
+                <i class="fas fa-fire fs-1 text-blue-600"></i>
                 <h3 class="title-font font-medium text-1xl text-gray-900 fw-bold">Camping</h3>
                 <p class="leading-relaxed">15 Destination</p>
               </div>
             </div>
             <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos="fade-down">
               <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                <i class="fas fa-location-arrow fs-1 text-sky-500"></i>
+                <i class="fas fa-location-arrow fs-1 text-blue-600"></i>
                 <h3 class="title-font font-medium text-1xl text-gray-900 fw-bold">Tracking</h3>
                 <p class="leading-relaxed">12 Destination</p>
               </div>
             </div>
             <div class="p-4 md:w-1/4 sm:w-1/2 w-full" data-aos="fade-down">
               <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                <i class="fas fa-binoculars fs-1 text-sky-500"></i>
+                <i class="fas fa-binoculars fs-1 text-blue-600"></i>
                 <h3 class="title-font font-medium text-1xl text-gray-900 fw-bold">Exploring</h3>
                 <p class="leading-relaxed">25 Destination</p>
               </div>
@@ -363,28 +383,26 @@
         </div>
       </section>
       <div class="card ">
-        <img src="image/t11.jpg" class="card-img" alt="..." style="width: 100%; height: 600px; opacity: 0.9;">
+        <img src="image/t11.jpg" class="card-img" alt="image" style="width: 100%; height: 600px; opacity: 0.9;">
         <div class=" card-img-overlay  ">
           <h5 class="card-title  text-white fw-bold fs-1">HOLIDAY SPECIAL 30% OFF!</h5>
-          <p class="card-text text-current text-white py-3 mt-2">Sign up now to receive hot special offers and information about the best tour packages, updates and discounts!!</p>
 
-            <div class="input-group mt-3">
-              <input type="text" class=" text-white form-control rounded " placeholder="Email Address" aria-label="Input group example" aria-describedby="btnGroupAddon"  data-aos="zoom-in"> 
+            <div class="input-group mt-6">
+              <input type="text" class=" text-white form-control rounded " placeholder="Email Address" aria-label="Input group example"  data-aos="zoom-in"> 
             </div>
-         <div class="input-group mt-3"><button class="text-white bg-rose-500 border-0 py-1  px-8  h-10 w-full focus:outline-none hover:bg-rose-600 rounded text-sm fw-bold"  data-aos="zoom-in">SignUp</button>
+         <div class="input-group mt-2"><button class="text-white bg-red-600 border-0 py-1  px-8  h-10 w-full focus:outline-none hover:bg-red-500 rounded text-sm fw-bold"  data-aos="zoom-in">SignUp</button>
         </div>
           </div>
         
           </div>
-        </div>
-      </div>
+       
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto"  data-aos="zoom-in">
           <div class="flex flex-wrap -m-4 bg-white shadow-lg py-15">
             <div class="lg:w-1/3 lg:mb-0 mb-6 p-4 ">
               <div class="h-full text-center">
-                <img alt="testimonial" class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="image/pic01.jpg">
-                <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                <img alt="testimonial1" class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="image/pic01.jpg">
+                <p class="leading-relaxed">This tour was a dream come true! Our guide was knowledgeable and passionate about the city, and we saw hidden gems.</p>
                 <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
                 <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
                 <p class="text-gray-500">Senior Product Designer</p>
@@ -392,8 +410,8 @@
             </div>
             <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
               <div class="h-full text-center">
-                <img alt="testimonial" class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="image/pic03.jpg">
-                <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                <img alt="testimonial2" class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="image/pic03.jpg">
+                <p class="leading-relaxed">This tour exceeded all my expectations. The pace was perfect, the sights were breathtaking, and our guide was friendly and accommodating.</p>
                 <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
                 <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">ALPER KAMU</h2>
                 <p class="text-gray-500">UI Develeoper</p>
@@ -401,8 +419,8 @@
             </div>
             <div class="lg:w-1/3 lg:mb-0 p-4">
               <div class="h-full text-center">
-                <img alt="testimonial" class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="image/pic02.jpg">
-                <p class="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
+                <img alt="testimonial3" class="w-40 h-40 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" src="image/pic02.jpg">
+                <p class="leading-relaxed">I loved how this tour took us off the beaten path and showed us the authentic side of the city. It was an unforgettable experience!</p>
                 <span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
                 <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HENRY LETHAM</h2>
                 <p class="text-gray-500">CTO</p>
@@ -411,88 +429,78 @@
           </div>
         </div>
       </section>
-      <footer class="text-white body-font bg-slate-400">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap md:text-left  order-first">
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
-              <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Useful Links</h2>
-              <nav class="list-none mb-10 ">
-                <li>
-                  <a class=" hover:text-red-500" href="package.html">Destination</a>
-                </li>
-                <li>
-                  <a class=" hover:text-red-500" href="hotel.html">Hotel</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="blog.html">Blog</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="contact.html">Contact Us</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="gallery.html" >Gallery</a>
-                </li>
-              </nav>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
-              <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Home</h2>
-              <nav class="list-none mb-10 ">
-                <li>
-                  <a class=" hover:text-red-500" href="home1.html">HomePage1</a>
-                </li>
-                <li>
-                  <a class=" hover:text-red-500" href="home2.html">HomePage2</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="home3.html">HomePage3</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="home4.html">HomePage4</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="home5.html" >HomePage5</a>
-                </li>
-              </nav>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
-              <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Address</h2>
-              <nav class="list-none mb-10 ">
-               <p>Lorem ipsum dolor sit.</p>
-               <p>+91 4545454546</p>
-               <p>xys@gmail.com</p>
-              </nav>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">  <span class=" text-xl text-white fw-bold">T<span style="color: red;">ravelo</span> </span></h2>
-              <p class="text-white text-md mt-1 md:text-left ">Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+      <footer class="bg-gray-900 text-gray-200">
+        <div class="container mx-auto py-14 px-6 mt-4">
+          <div class="grid md:grid-cols-12 grid-cols-1 gap-7">
+            <div class="lg:col-span-4 col-span-12">
+              <a href="home1.html" class="text-decoration-none">
+                <h2 class="text-sm mb-3 fs-3 text-white fw-bold">T<span style="color: red;">ravelo</span></h2>
+              </a>
+              <p class="mt-6">Explore the world with Travelo,your ultimate guide to discovering new destinations,immersing yourself
+                in different culture, and creating unforgettable travel experiences.
               </p>
+            </div>
+            <div class="lg:col-span-2 md:col-span-4 col-span-12">
+              <h5 class="tracking-wide text-white font-bold ">Useful Links</h5>
+              <ul class="list-none mt-6 space-y-2 pl-0">
+                <li><a href="package.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Destination</a></li>
+                <li><a href="hotel.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Hotel</a></li>
+                <li><a href="blog.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Blog</a></li>
+                <li><a href="contact.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Contact Us</a></li>
+                <li><a href="gallery.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Gallery</a></li>
+              </ul>
+            </div>
+            <div class="lg:col-span-3 md:col-span-4 col-span-12">
+              <h5 class="tracking-wide text-white font-bold ">Home</h5>
+              <ul class="list-none mt-6 space-y-2 pl-0">
+                <li><a href="home1.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage1</a></li>
+                <li><a href="home2.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage2</a></li>
+                <li><a href="home3.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage3</a></li>
+                <li><a href="home4.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage4</a></li>
+                <li><a href="home5.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage5</a></li>
+              </ul>
+            </div>
+            <div class="lg:col-span-3 md:col-span-4 col-span-12">
+              <h5 class="tracking-wide text-white font-bold  ">Address</h5>
+             <p class="mt-6">123 Main St, Anytown , USA 123456</p>
+             <a href="mailto:travelo@example.com" class="text-decoration-none text-white">
+              <p class="font-semibold mt-1 hover:text-red-600 transition-all duration-500 ease-in-out"><i class="fas fa-envelope"></i> &nbsp;&nbsp;travelo@example.com</p>
+             </a>
+             <a href="tel:9876767673" class="text-decoration-none text-white"> 
+              <p class="font-semibold mt-1 hover:text-red-600 transition-all duration-500 ease-in-out"><i class="fas fa-phone"></i> &nbsp;&nbsp; +91 9876767673</p> 
+            </a>
+            
+  
             </div>
           </div>
         </div>
-        <div class="bg-slate-300">
+  
+        <div class="bg-slate-700 border-t">
           <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-            <p class="text-white text-sm text-center sm:text-left fw-bold">© 2024 Travelo —
-              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-white ml-1 fw-bold" target="_blank">All Rights Reserved</a>
+            <p class="text-white text-sm text-center sm:text-left mt-2">&copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Travelo - All Rights Reserved
             </p>
             <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-              <a class="text-white fw-bold">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <a class="text-white fw-bold" href="#">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-red-500" viewBox="0 0 24 24">
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                 </svg>
               </a>
-              <a class="ml-3 text-white fw-bold">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
+             
+              <a class="ml-3 text-white fw-bold" href="#">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
               </a>
-              <a class="ml-3 text-white fw-bold">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <a class="ml-3 text-white fw-bold" href="#">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-red-500" viewBox="0 0 24 24">
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                 </svg>
               </a>
-              <a class="ml-3 text-white fw-bold">
-                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <a class="ml-3 text-white fw-bold" href="#">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5 hover:text-red-500" viewBox="0 0 24 24">
                   <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
                   <circle cx="4" cy="4" r="2" stroke="none"></circle>
                 </svg>
@@ -501,7 +509,82 @@
           </div>
         </div>
       </footer>
+      <script>
+        function validatename(){
+          let name=document.getElementById("destinations").value;
 
+          let nameerror=document.getElementById("nameerror");
+          if(name===""){
+            nameerror.textContent="Name is required";
+            return false;
+          }
+          else{
+            nameerror.textContent="";
+            return true;
+          }
+        }
+        function validatenumber(){
+          let number=document.getElementById("pax-number").value;
+          let numbererror=document.getElementById("numbererror");
+          let nPattern=/^\d+$/;
+          if(number===""){
+            numbererror.textContent="Number is required";
+            return false;
+          }
+          else if(!nPattern.test(number)){
+            numbererror.textContent="Invalid number";
+            return false;
+          }
+          else{
+            numbererror.textContent="";
+            return true;
+          }
+        }
+        function validatecheckin(){
+          let checkin=document.getElementById("checkin").value;
+          let checkinerror=document.getElementById("checkinerror");
+          if(checkin===""){
+            checkinerror.textContent="CheckIn Date required";
+            return false;
+          }
+          
+          else{
+           checkinerror.textContent="";
+            return true;
+          }
+        }
+        function validatecheckout(){
+          let checkout=document.getElementById("checkout").value;
+          let checkouterror=document.getElementById("checkouterror");
+          if(checkout===""){
+            checkouterror.textContent="CheckOut Date required";
+            return false;
+          }
+          
+          else{
+           checkouterror.textContent="";
+            return true;
+          }
+        }
+        function validateform(event){
+          event.preventDefault();
+          let isname=validatename();
+          let isnumber=validatenumber();
+          let ischeckin=validatecheckin();
+          let ischeckout=validatecheckout();
+          if(isname && isnumber && ischeckin && ischeckout){
+           document.getElementById("destinations").value="";
+           document.getElementById("pax-number").value="";
+           document.getElementById("checkin").value="";
+           document.getElementById("checkout").value="";
+           return true;
+          }
+          else{
+            return false;
+            
+          }
+        }
+      </script>
  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({ offset: 300,
