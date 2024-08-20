@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Package Description</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="icon" href="image/favicon-32x32.png" type="image/jpeg">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
     <style>
         .card-img-overlay{
             top: 50%;
@@ -20,27 +22,31 @@
     </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand  fw-bold fs-3" href="#">T<span style="color: red;">ravelo</span></a>
-      </button>
+      <a class="navbar-brand  fw-bold fs-3" href="home1.html">T<span style="color: red;">ravelo</span></a>
       <div class="text-end d-flex ">
-        <div>  <a class="btn fs-4" href="register.html">  <i class="fas fa-registered text-red-500"></i>  </a>
+        <div>
+          <a class="btn fs-4" href="register.html">
+            <i class="fas fa-registered text-red-500"></i>
+          </a>
         </div>
-        <div>  <a class="btn fs-4" href="login.html">  <i class="fas fa-user text-red-500"></i>  </a>
+        <div>
+          <a class="btn fs-4" href="login.html">
+            <i class="fas fa-user text-red-500"></i>
+          </a>
         </div>
-       <div>  <a class="btn fs-4 " data-bs-toggle="offcanvas" href="#offcanvasNavbar" 
-        role="button" aria-controls="#offcanvasNavbar">  <i class="fas fa-bars text-red-500"></i>  </a>
+       <div>
+        <a class="btn fs-4 " data-bs-toggle="offcanvas" href="#offcanvasNavbar" role="button" aria-controls="offcanvasNavbar">
+          <i class="fas fa-bars text-red-500"></i>
+        </a>
       </div>
       </div>
-    
-  
     </div>
   </nav>
-  <div class="navbar bg-body-tertiary fixed-top">
+  <div class="navbar bg-body-tertiary">
     <div class="container-fluid">
-     
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
         <div class="offcanvas-header">
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -105,24 +111,33 @@
                 Tour Guide
               </a>
             </li>
+            <li class="nav-item dropdown w-100">
+              <a class="nav-link dropdown-toggle w-100  hover:bg-green-400 px-3 " href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu border-0">
+                <li><a class="dropdown-item fw:bold hover:bg-white px-12 hover:text-red-500" href="packagepage.html">Package Type</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="button.html">Button</a></li>
+              </ul>
+            </li>
           </ul>
          
         </div>
       </div>
     </div>
   </div>
-      <div class="card ">
-        <img src="image/ocean-7890172_1280.jpg" class="card-img h" alt="..." style="width: 100%; height: 350px; opacity: 0.9;">
+      <div class="card mt-5">
+        <img src="image/ocean-7890172_1280.jpg" class="card-img h" alt="noimgae" style="width: 100%; height: 350px; opacity: 0.9;">
         <div class="card-img-overlay ">
-          <h5 class="card-title  text-white fw-bold  text-3xl mt-7">Package Details</h5>
+          <h5 class="card-title  text-white fw-bold  text-2xl lg:text-5xl mt-7">Package Details</h5>
         </div>
       </div>
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-16 mx-auto flex flex-wrap items-center">
           <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0 mx-auto">
             <h1 class="title-font font-medium text-3xl text-gray-900 mb-4">Description</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque blanditiis nobis debitis sit officiis quibusdam sapiente doloribus culpa inventore similique, libero voluptatem ipsam quisquam temporibus impedit voluptatibus veritatis, quod cum?</p>
-            <p class="leading-relaxed mt-4">Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock starladder roathse. Craies vegan tousled etsy austin.Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock starladder roathse. Craies vegan tousled etsy austin Craies vegan tousled etsy austin.</p>
+            <p>Serene and majestic, the Chinese garden unfolds as a tranquil oasis, with intricately designed pavilions, whispering waterfalls, and lush greenery harmonizing in perfect balance. Ancient wisdom and natural beauty blend in this peaceful retreat, inviting contemplation and connection with nature's essence.</p>
+            <p class="leading-relaxed mt-4">Where water meets wonder, the boat house beckons with promises of peace and possibility.Majestically moored on tranquil waters, the boat house whispers secrets of serenity and adventure.</p>
           </div>
           </div>
           </section>
@@ -135,12 +150,12 @@
                 <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm"> 1</div>
                 <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
                   <div class="flex-shrink-0 w-24 h-24  text-indigo-500  inline-flex items-center justify-center">
-                    <img src="image/phra-nakhon-si-ayutthaya-.jpg" alt="">
+                    <img src="image/phra-nakhon-si-ayutthaya-.jpg" alt="noimgae">
                   </div>
                   <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                     <p class="leading-relaxed fw-bold text-black">Day 1</p>
-                    <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Shooting Stars</h2>
-                    <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
+                    <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Phra-Nakhon</h2>
+                    <p class="leading-relaxed">The boat house stood serenely on the water's edge, its wooden slats weathered to a soft silver that seemed to glow in the fading light of day.</p>
                   </div>
                 </div>
               </div>
@@ -151,12 +166,12 @@
                 <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">2</div>
                 <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
                   <div class="flex-shrink-0 w-24 h-24  text-indigo-500  inline-flex items-center justify-center">
-                   <img src="image/h5.jpeg" alt="">
+                   <img src="image/h5.jpeg" alt="noimgae">
                   </div>
                   <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                     <p class="leading-relaxed fw-bold text-black">Day 2</p>
-                    <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">The Catalyzer</h2>
-                    <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
+                    <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Tower Building</h2>
+                    <p class="leading-relaxed">A haven of rustic charm, the boat house stands sentinel over the lake's gentle lapping waves</p>
                   </div>
                 </div>
               </div>
@@ -167,12 +182,12 @@
                 <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">3</div>
                 <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
                   <div class="flex-shrink-0 w-24 h-24  text-indigo-500  inline-flex items-center justify-center">
-                    <img src="image/t1.jpg" alt="">
+                    <img src="image/t1.jpg" alt="noimgae">
                     </div>
                   <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                     <p class="leading-relaxed fw-bold text-black">Day 3</p>
-                    <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">The 400 Blows</h2>
-                    <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
+                    <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Boat House</h2>
+                    <p class="leading-relaxed">Cambodia, a land of ancient mystery and beauty, where majestic temples and vibrant culture entwine amidst a tapestry of tropical landscape.</p>
                   </div>
                 </div>
               </div>
@@ -183,12 +198,12 @@
                 <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-red-500 text-white relative z-10 title-font font-medium text-sm">4</div>
                 <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
                   <div class="flex-shrink-0 w-24 h-24  text-indigo-500  inline-flex items-center justify-center">
-                    <img src="image/t10.jpg" alt="">
+                    <img src="image/t10.jpg" alt="noimgae">
                     </div>
                   <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                     <p class="leading-relaxed fw-bold text-black">Day 4</p>
-                    <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Neptune</h2>
-                    <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
+                    <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">China Town</h2>
+                    <p class="leading-relaxed">Majestically moored on tranquil waters, the boat house whispers secrets of serenity and adventure.</p>
                   </div>
                 </div>
               </div>
@@ -201,117 +216,111 @@
           <section class="text-gray-600 body-font">
             <div class="container px-5 py-16 mx-auto flex flex-wrap items-center">
               <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0 mx-auto">
-           <p class="leading-relaxed mt-2 mb-3  ">Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock starladder roathse. Craies vegan tousled etsy austin.Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock starladder roathse. Craies vegan tousled etsy austin Craies vegan tousled etsy austin.</p>
+           <p class="leading-relaxed mt-2 mb-3  ">This tour was a dream come true! Our guide was knowledgeable and passionate about the city, and we saw hidden gems we never would have found on our own.</p>
        <h2 class="text-xl fw-bold">Facilities</h2>
            <ul style="list-style-type:disc ;" class="px-6">
-          <li>   <p>Lorem, ipsum dolor.</p></li>
-          <li>   <p>Lorem ipsum dolor sit.</p></li>
-          <li>   <p>Lorem ipsum dolor sit amet.</p></li>
-          <li>   <p>Lorem, ipsum dolor.</p></li>
-          <li>   <p>Lorem ipsum dolor sit amet.</p></li>
-          <li>   <p>Lorem, ipsum dolor.</p></li>
-          <li>   <p>Lorem ipsum dolor sit amet.</p></li>
+          <li>   <p>Free Food</p></li>
+          <li>   <p>Convenience</p></li>
+          <li>   <p>Security</p></li>
+          <li>   <p>Tracking</p></li>
+          <li>   <p>Insurance</p></li>
+          <li>   <p>Reliability</p></li>
+          <li>   <p>Cost Effective</p></li>
 
         </ul>
               </div>
               </div>
               </section>
+              <form  id="myform" onsubmit="return validateform(event)" method="post">
               <div class=" md:w-1/2 bg-gray-100 mb-3 rounded-lg p-8 flex flex-col md:mx-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
                 <h2 class="text-2xl fw-bold">45$/ <span class="text-xl">person</span></h2>
                 <div class="relative mb-4">
-                    <label for="check" class="leading-7 text-md text-black fw-bold">When</label>
-                    <input type="date" id="check" name="check" placeholder="Mon 2 July- Fri 11 Aug" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <label for="checkin" class="leading-7 text-md text-black fw-bold">When</label>
+                    <input type="date" id="checkin" name="checkin"  class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" oninput="validatecheckin()">
+                    <span id="checkinerror" class="text-red-500"></span>
                   </div>
                   <div class="relative mb-4">
-                    <label for="guest" class="leading-7 text-md text-black fw-bold">Guest</label>
-                    <input type="text" id="guest" name="guest" placeholder="2 adults- 1 children -1 room" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <label for="pax-number" class="leading-7 text-md text-black fw-bold">Guest</label>
+                    <input type="text" id="pax-number" name="pax-number" placeholder="2 adults- 1 children -1 room" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"  oninput="validatenumber()">
+                    <span id="numbererror" class="text-red-500"></span>
                   </div>
               
-                <a href="booking1.html" class="text-white text-center bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg fw-bold">Book Now</a>
+                <button class="text-white text-center bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg fw-bold">Book Now</button>
                
               </div>
-              <footer class="text-white body-font bg-slate-400">
-                <div class="container px-5 py-24 mx-auto">
-                  <div class="flex flex-wrap md:text-left  order-first">
-                    <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
-                      <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Useful Links</h2>
-                      <nav class="list-none mb-10 ">
-                        <li>
-                          <a class=" hover:text-red-500" href="package.html">Destination</a>
-                        </li>
-                        <li>
-                          <a class=" hover:text-red-500" href="hotel.html">Hotel</a>
-                        </li>
-                        <li>
-                          <a class="  hover:text-red-500" href="blog.html">Blog</a>
-                        </li>
-                        <li>
-                          <a class="  hover:text-red-500" href="contact.html">Contact Us</a>
-                        </li>
-                        <li>
-                          <a class="  hover:text-red-500" href="gallery.html" >Gallery</a>
-                        </li>
-                      </nav>
-                    </div>
-                    <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
-                      <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Home</h2>
-                      <nav class="list-none mb-10 ">
-                        <li>
-                          <a class=" hover:text-red-500" href="home1.html">HomePage1</a>
-                        </li>
-                        <li>
-                          <a class=" hover:text-red-500" href="home2.html">HomePage2</a>
-                        </li>
-                        <li>
-                          <a class="  hover:text-red-500" href="home3.html">HomePage3</a>
-                        </li>
-                        <li>
-                          <a class="  hover:text-red-500" href="home4.html">HomePage4</a>
-                        </li>
-                        <li>
-                          <a class="  hover:text-red-500" href="home5.html" >HomePage5</a>
-                        </li>
-                      </nav>
-                    </div>
-                    <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
-                      <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Address</h2>
-                      <nav class="list-none mb-10 ">
-                       <p>Lorem ipsum dolor sit.</p>
-                       <p>+91 4545454546</p>
-                       <p>xys@gmail.com</p>
-                      </nav>
-                    </div>
-                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                      <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">  <span class=" text-xl text-white fw-bold">T<span style="color: red;">ravelo</span> </span></h2>
-                      <p class="text-white text-md mt-1 md:text-left ">Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+              </form>
+              <footer class="bg-gray-900 text-gray-200 ">
+                <div class="container mx-auto py-14 px-6 mt-4">
+                  <div class="grid md:grid-cols-12 grid-cols-1 gap-7">
+                    <div class="lg:col-span-4 col-span-12">
+                      <a href="home1.html" class="text-decoration-none">
+                        <h2 class="text-sm mb-3 fs-3 text-white fw-bold">T<span style="color: red;">ravelo</span></h2>
+                      </a>
+                      <p class="mt-6">Explore the world with Travelo,your ultimate guide to discovering new destinations,immersing yourself
+                        in different culture, and creating unforgettable travel experiences.
                       </p>
+                    </div>
+                    <div class="lg:col-span-2 md:col-span-4 col-span-12">
+                      <h5 class="tracking-wide text-white font-bold ">Useful Links</h5>
+                      <ul class="list-none mt-6 space-y-2 pl-0">
+                        <li><a href="package.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Destination</a></li>
+                        <li><a href="hotel.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Hotel</a></li>
+                        <li><a href="blog.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Contact Us</a></li>
+                        <li><a href="gallery.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Gallery</a></li>
+                      </ul>
+                    </div>
+                    <div class="lg:col-span-3 md:col-span-4 col-span-12">
+                      <h5 class="tracking-wide text-white font-bold ">Home</h5>
+                      <ul class="list-none mt-6 space-y-2 pl-0">
+                        <li><a href="home1.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage1</a></li>
+                        <li><a href="home2.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage2</a></li>
+                        <li><a href="home3.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage3</a></li>
+                        <li><a href="home4.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage4</a></li>
+                        <li><a href="home5.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage5</a></li>
+                      </ul>
+                    </div>
+                    <div class="lg:col-span-3 md:col-span-4 col-span-12">
+                      <h5 class="tracking-wide text-white font-bold  ">Address</h5>
+                     <p class="mt-6">123 Main St, Anytown , USA 123456</p>
+                     <a href="mailto:travelo@example.com" class="text-decoration-none text-white">
+                      <p class="font-semibold mt-1 hover:text-red-600 transition-all duration-500 ease-in-out"><i class="fas fa-envelope"></i> &nbsp;&nbsp;travelo@example.com</p>
+                     </a>
+                     <a href="tel:9876767673" class="text-decoration-none text-white"> 
+                      <p class="font-semibold mt-1 hover:text-red-600 transition-all duration-500 ease-in-out"><i class="fas fa-phone"></i> &nbsp;&nbsp; +91 9876767673</p> 
+                    </a>
+                    
+          
                     </div>
                   </div>
                 </div>
-                <div class="bg-slate-300">
+          
+                <div class="bg-slate-700 border-t">
                   <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                    <p class="text-white text-sm text-center sm:text-left fw-bold">© 2024 Travelo —
-                      <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-white ml-1 fw-bold" target="_blank">All Rights Reserved</a>
+                    <p class="text-white text-sm text-center sm:text-left mt-2">&copy;
+                      <script>
+                        document.write(new Date().getFullYear());
+                      </script>
+                      Travelo - All Rights Reserved
                     </p>
                     <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-                      <a class="text-white fw-bold">
-                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <a class="text-white fw-bold" href="#">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-red-500" viewBox="0 0 24 24">
                           <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                         </svg>
                       </a>
-                      <a class="ml-3 text-white fw-bold">
-                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                        </svg>
+                     
+                      <a class="ml-3 text-white fw-bold" href="#">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
                       </a>
-                      <a class="ml-3 text-white fw-bold">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <a class="ml-3 text-white fw-bold" href="#">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-red-500" viewBox="0 0 24 24">
                           <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                           <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                         </svg>
                       </a>
-                      <a class="ml-3 text-white fw-bold">
-                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                      <a class="ml-3 text-white fw-bold" href="#">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5 hover:text-red-500" viewBox="0 0 24 24">
                           <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
                           <circle cx="4" cy="4" r="2" stroke="none"></circle>
                         </svg>
@@ -320,6 +329,58 @@
                   </div>
                 </div>
               </footer>
+              <script>
+             
+                function validatenumber(){
+                  let number=document.getElementById("pax-number").value;
+                  let numbererror=document.getElementById("numbererror");
+                  let nPattern=/^\d+$/;
+                  if(number===""){
+                    numbererror.textContent="Number is required";
+                    return false;
+                  }
+                  else if(!nPattern.test(number)){
+                    numbererror.textContent="Invalid number";
+                    return false;
+                  }
+                  else{
+                    numbererror.textContent="";
+                    return true;
+                  }
+                }
+                function validatecheckin(){
+                  let checkin=document.getElementById("checkin").value;
+                  let checkinerror=document.getElementById("checkinerror");
+                  if(checkin===""){
+                    checkinerror.textContent="CheckIn Date required";
+                    return false;
+                  }
+                  
+                  else{
+                   checkinerror.textContent="";
+                    return true;
+                  }
+                }
+              
+                function validateform(event){
+                  event.preventDefault();
+                
+                  let isnumber=validatenumber();
+                  let ischeckin=validatecheckin();
+                
+                  if( isnumber && ischeckin ){
+                 window.location.href='booking1.html';
+                   document.getElementById("pax-number").value="";
+                   document.getElementById("checkin").value="";
+                 
+                   return true;
+                  }
+                  else{
+                    return false;
+                    
+                  }
+                }
+              </script>
               <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
               <script>
                 AOS.init({ offset: 300,
