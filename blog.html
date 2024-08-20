@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="icon" href="image/favicon-32x32.png" type="image/jpeg">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="index.css">
     <style>
       .card-img-overlay{
         top: 50%;
@@ -19,27 +22,31 @@
     </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand  fw-bold fs-3" href="#">T<span style="color: red;">ravelo</span></a>
-      </button>
+      <a class="navbar-brand  fw-bold fs-3" href="home1.html">T<span style="color: red;">ravelo</span></a>
       <div class="text-end d-flex ">
-        <div>  <a class="btn fs-4" href="register.html">  <i class="fas fa-registered text-red-500"></i>  </a>
+        <div>
+          <a class="btn fs-4" href="register.html">
+            <i class="fas fa-registered text-red-500"></i>
+          </a>
         </div>
-        <div>  <a class="btn fs-4" href="login.html">  <i class="fas fa-user text-red-500"></i>  </a>
+        <div>
+          <a class="btn fs-4" href="login.html">
+            <i class="fas fa-user text-red-500"></i>
+          </a>
         </div>
-       <div>  <a class="btn fs-4 " data-bs-toggle="offcanvas" href="#offcanvasNavbar" 
-        role="button" aria-controls="#offcanvasNavbar">  <i class="fas fa-bars text-red-500"></i>  </a>
+       <div>
+        <a class="btn fs-4 " data-bs-toggle="offcanvas" href="#offcanvasNavbar" role="button" aria-controls="offcanvasNavbar">
+          <i class="fas fa-bars text-red-500"></i>
+        </a>
       </div>
       </div>
-    
-  
     </div>
   </nav>
-  <div class="navbar bg-body-tertiary fixed-top">
+  <div class="navbar bg-body-tertiary">
     <div class="container-fluid">
-     
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
         <div class="offcanvas-header">
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -104,28 +111,36 @@
                 Tour Guide
               </a>
             </li>
+            <li class="nav-item dropdown w-100">
+              <a class="nav-link dropdown-toggle w-100  hover:bg-green-400 px-3 " href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu border-0">
+                <li><a class="dropdown-item fw:bold hover:bg-white px-12 hover:text-red-500" href="packagepage.html">Package Type</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="button.html">Button</a></li>
+              </ul>
+            </li>
           </ul>
          
         </div>
       </div>
     </div>
   </div>
-      <div class="card ">
-        <img src="image/ocean-7890172_1280.jpg" class="card-img h" alt="..." style="width: 100%; height: 350px; opacity: 0.9;">
+      <div class="card mt-5 mb-6">
+        <img src="image/ocean-7890172_1280.jpg" class="card-img h" alt="card" style="width: 100%; height: 350px; opacity: 0.9;">
         <div class="card-img-overlay ">
           <h5 class="card-title  text-white fw-bold  text-5xl mt-8">Blog</h5>
         </div>
       </div>
       <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div class="container px-5 py-15 mx-auto flex flex-wrap">
           <div class="lg:w-2/3 mx-auto">
             <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
-              <img alt="gallery" class="w-full  h-full object-center block  absolute inset-0" src="image/t3.jpg"> 
+              <img alt="blog1" class="w-full  h-full object-center block  absolute inset-0" src="image/t3.jpg"> 
             </div>
-              <h1 class="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900 fw-bold">GOLDEN GATE BRIDGE BY ROAD</h1>
+              <h1 class="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900 fw-bold">Global Expeditions: Explore the World's Wonders</h1>
             <p class="fw-bold mb-3">05 Aug 2024 &nbsp; [San Francisco, US]</p>
-              <p class="mb-8 leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi deleniti ducimus fugiat obcaecati eligendi atque illum vero! Consequatur fugit iste veniam quia nobis nisi placeat veritatis, minus eum mollitia!
-              Sequi a voluptates laboriosam maiores quisquam reiciendis, atque vel aperiam nemo repellat dolor cupiditate quidem dolore tempore explicabo ratione eos excepturi tenetur! Sapiente dignissimos neque animi officiis blanditiis quis aspernatur.</p>
+              <p class="mb-8 leading-relaxed">Our goal is to fuel your wanderlust and empower you to explore the world with confidence. We believe that travel has the power to transform and enrich our lives, and we're committed to sharing our passion with you. Through our stories, guides, and photography, we hope to inspire you to venture off the beaten path, try new things, and make unforgettable memories.</p>
             <div class="flex">
               <a href="blog-detail.html" class="inline-flex text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 rounded text-lg fw-bold">Read More</a>
             </div>
@@ -136,12 +151,11 @@
         <div class="container px-5 py-15 mx-auto flex flex-wrap">
           <div class="lg:w-2/3 mx-auto">
             <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
-              <img alt="gallery" class="w-full  h-full object-center block  absolute inset-0" src="image/t4.jpg"> 
+              <img alt="blog2" class="w-full  h-full object-center block  absolute inset-0" src="image/t4.jpg"> 
             </div>
-              <h1 class="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900 fw-bold">HIMALAYA BY TRAIN WITH EASTERN AND ORIENTAL EXPRESS</h1>
+              <h1 class="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900 fw-bold">Travel Atlas: Mapping Your Adventures</h1>
             <p class="fw-bold mb-3">10 Aug 2024 &nbsp;[HP, India]</p>
-              <p class="mb-8 leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi deleniti ducimus fugiat obcaecati eligendi atque illum vero! Consequatur fugit iste veniam quia nobis nisi placeat veritatis, minus eum mollitia!
-              Sequi a voluptates laboriosam maiores quisquam reiciendis, atque vel aperiam nemo repellat dolor cupiditate quidem dolore tempore explicabo ratione eos excepturi tenetur! Sapiente dignissimos neque animi officiis blanditiis quis aspernatur.</p>
+              <p class="mb-8 leading-relaxed">Join me on a journey of cultural immersion, outdoor adventure, and personal growth as I explore the world and push beyond my comfort zone. From trying new foods to learning new languages, I'll dive into the local way of life and share my discoveries with you.</p>
             <div class="flex">
                 <a href="blog-detail.html" class="inline-flex text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 rounded text-lg fw-bold">Read More</a>
               </div>
@@ -149,15 +163,14 @@
             </div>
       </section>
       <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div class="container px-5 py-15 mx-auto flex flex-wrap">
           <div class="lg:w-2/3 mx-auto">
             <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
-              <img alt="gallery" class="w-full  h-full object-center block  absolute inset-0" src="image/t5.jpg"> 
+              <img alt="blog3" class="w-full  h-full object-center block  absolute inset-0" src="image/t5.jpg"> 
             </div>
-              <h1 class="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900 fw-bold text-uppercase">Lorem ipsum dolor sit amet consectetur.</h1>
+              <h1 class="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900 fw-bold">The Traveler's Encyclopedia: Insights and Inspiration</h1>
             <p class="fw-bold mb-3">25 Aug 2024 &nbsp; [Kathmandu, Nepal]</p>
-              <p class="mb-8 leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi deleniti ducimus fugiat obcaecati eligendi atque illum vero! Consequatur fugit iste veniam quia nobis nisi placeat veritatis, minus eum mollitia!
-              Sequi a voluptates laboriosam maiores quisquam reiciendis, atque vel aperiam nemo repellat dolor cupiditate quidem dolore tempore explicabo ratione eos excepturi tenetur! Sapiente dignissimos neque animi officiis blanditiis quis aspernatur.</p>
+              <p class="mb-8 leading-relaxed">Your guide to exploring the world's most incredible destinations, with insider tips, stunning photography, and inspiring stories. From hiking through the Himalayas to island-hopping in Greece, I'll share my expertise and passion for travel with you.</p>
             <div class="flex">
               <a href="blog-detail.html" class="inline-flex text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 rounded text-lg fw-bold">Read More</a>
             </div>
@@ -168,28 +181,11 @@
         <div class="container px-5 py-15 mx-auto flex flex-wrap">
           <div class="lg:w-2/3 mx-auto">
             <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
-              <img alt="gallery" class="w-full  h-full object-center block  absolute inset-0" src="image/t10.jpg"> 
+              <img alt="blog4" class="w-full  h-full object-center block  absolute inset-0" src="image/t10.jpg"> 
             </div>
-              <h1 class="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900 fw-bold text-uppercase">CHINA Lorem ipsum dolor sit amet consectetur.</h1>
+              <h1 class="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900 fw-bold">World Wanderings: Discover Hidden Gems</h1>
             <p class="fw-bold mb-3">28 Aug 2024 &nbsp;[Tibet,China]</p>
-              <p class="mb-8 leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi deleniti ducimus fugiat obcaecati eligendi atque illum vero! Consequatur fugit iste veniam quia nobis nisi placeat veritatis, minus eum mollitia!
-              Sequi a voluptates laboriosam maiores quisquam reiciendis, atque vel aperiam nemo repellat dolor cupiditate quidem dolore tempore explicabo ratione eos excepturi tenetur! Sapiente dignissimos neque animi officiis blanditiis quis aspernatur.</p>
-            <div class="flex">
-              <a href="blog-detail.html" class="inline-flex text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 rounded text-lg fw-bold">Read More</a>
-            </div>
-              </div>
-            </div>
-      </section>
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
-          <div class="lg:w-2/3 mx-auto">
-            <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
-              <img alt="gallery" class="w-full  h-full object-center block  absolute inset-0" src="image/t6.jpg"> 
-            </div>
-              <h1 class="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900 fw-bold">KASHMIR BY TRAIN WITH EASTERN AND ORIENTAL EXPRESS</h1>
-            <p class="fw-bold mb-3">10 Sep 2024 &nbsp;[Kashmir, India]</p>
-              <p class="mb-8 leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi deleniti ducimus fugiat obcaecati eligendi atque illum vero! Consequatur fugit iste veniam quia nobis nisi placeat veritatis, minus eum mollitia!
-              Sequi a voluptates laboriosam maiores quisquam reiciendis, atque vel aperiam nemo repellat dolor cupiditate quidem dolore tempore explicabo ratione eos excepturi tenetur! Sapiente dignissimos neque animi officiis blanditiis quis aspernatur.</p>
+              <p class="mb-8 leading-relaxed">Where travel meets storytelling, join me on a journey of adventure and self-discovery as I explore the world and share my tales. From the bustling streets of Tokyo to the serene landscapes of New Zealand, I'll take you on a journey to the most incredible destinations on earth.</p>
             <div class="flex">
               <a href="blog-detail.html" class="inline-flex text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 rounded text-lg fw-bold">Read More</a>
             </div>
@@ -200,100 +196,104 @@
         <div class="container px-5 py-15 mx-auto flex flex-wrap">
           <div class="lg:w-2/3 mx-auto">
             <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
-              <img alt="gallery" class="w-full  h-full object-center block  absolute inset-0" src="image/t1.jpg"> 
+              <img alt="blog5" class="w-full  h-full object-center block  absolute inset-0" src="image/t6.jpg"> 
             </div>
-              <h1 class="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900 fw-bold">ODISHA BY TRAIN WITH EASTERN AND ORIENTAL EXPRESS</h1>
-            <p class="fw-bold mb-3">20 Sep 2024 &nbsp;[Odisha, India]</p>
-              <p class="mb-8 leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi deleniti ducimus fugiat obcaecati eligendi atque illum vero! Consequatur fugit iste veniam quia nobis nisi placeat veritatis, minus eum mollitia!
-              Sequi a voluptates laboriosam maiores quisquam reiciendis, atque vel aperiam nemo repellat dolor cupiditate quidem dolore tempore explicabo ratione eos excepturi tenetur! Sapiente dignissimos neque animi officiis blanditiis quis aspernatur.</p>
+              <h1 class="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900 fw-bold">The Adventure Archive: Stories and Guides</h1>
+            <p class="fw-bold mb-3">10 Sep 2024 &nbsp;[Kashmir, India]</p>
+              <p class="mb-8 leading-relaxed">Follow along as I explore new destinations, immerse myself in different cultures, and share my experiences with you. From trying new foods to learning new languages, I'll dive into the local way of life and share my discoveries with you</p>
             <div class="flex">
               <a href="blog-detail.html" class="inline-flex text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 rounded text-lg fw-bold">Read More</a>
             </div>
               </div>
             </div>
       </section>
-      <footer class="text-white body-font bg-slate-400">
-        <div class="container px-5 py-24 mx-auto mt-3">
-          <div class="flex flex-wrap md:text-left  order-first">
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
-              <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Useful Links</h2>
-              <nav class="list-none mb-10 ">
-                <li>
-                  <a class=" hover:text-red-500" href="package.html">Destination</a>
-                </li>
-                <li>
-                  <a class=" hover:text-red-500" href="hotel.html">Hotel</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="blog.html">Blog</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="contact.html">Contact Us</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="gallery.html" >Gallery</a>
-                </li>
-              </nav>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-15 mx-auto flex flex-wrap">
+          <div class="lg:w-2/3 mx-auto">
+            <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
+              <img alt="blog6" class="w-full  h-full object-center block  absolute inset-0" src="image/t1.jpg"> 
             </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
-              <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Home</h2>
-              <nav class="list-none mb-10 ">
-                <li>
-                  <a class=" hover:text-red-500" href="home1.html">HomePage1</a>
-                </li>
-                <li>
-                  <a class=" hover:text-red-500" href="home2.html">HomePage2</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="home3.html">HomePage3</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="home4.html">HomePage4</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="home5.html" >HomePage5</a>
-                </li>
-              </nav>
+              <h1 class="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900 fw-bold">Globe Trekker: Explore, Experience, Enjoy</h1>
+            <p class="fw-bold mb-3">20 Sep 2024 &nbsp;[Odisha, India]</p>
+              <p class="mb-8 leading-relaxed">Join me on a journey of discovery and exploration as I share stories, tips, and inspiration from my travels around the world. From bustling cities to tranquil landscapes, I'll take you on a journey to the most incredible destinations on earth.</p>
+            <div class="flex">
+              <a href="blog-detail.html" class="inline-flex text-white bg-rose-500 border-0 py-2 px-6 focus:outline-none hover:bg-rose-600 rounded text-lg fw-bold">Read More</a>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
-              <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Address</h2>
-              <nav class="list-none mb-10 ">
-               <p>Lorem ipsum dolor sit.</p>
-               <p>+91 4545454546</p>
-               <p>xys@gmail.com</p>
-              </nav>
+              </div>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">  <span class=" text-xl text-white fw-bold">T<span style="color: red;">ravelo</span> </span></h2>
-              <p class="text-white text-md mt-1 md:text-left ">Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+      </section>
+      <footer class="bg-gray-900 text-gray-200">
+        <div class="container mx-auto py-14 px-6 mt-4">
+          <div class="grid md:grid-cols-12 grid-cols-1 gap-7">
+            <div class="lg:col-span-4 col-span-12">
+              <a href="home1.html" class="text-decoration-none">
+                <h2 class="text-sm mb-3 fs-3 text-white fw-bold">T<span style="color: red;">ravelo</span></h2>
+              </a>
+              <p class="mt-6">Explore the world with Travelo,your ultimate guide to discovering new destinations,immersing yourself
+                in different culture, and creating unforgettable travel experiences.
               </p>
+            </div>
+            <div class="lg:col-span-2 md:col-span-4 col-span-12">
+              <h5 class="tracking-wide text-white font-bold ">Useful Links</h5>
+              <ul class="list-none mt-6 space-y-2 pl-0">
+                <li><a href="package.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Destination</a></li>
+                <li><a href="hotel.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Hotel</a></li>
+                <li><a href="blog.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Blog</a></li>
+                <li><a href="contact.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Contact Us</a></li>
+                <li><a href="gallery.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Gallery</a></li>
+              </ul>
+            </div>
+            <div class="lg:col-span-3 md:col-span-4 col-span-12">
+              <h5 class="tracking-wide text-white font-bold ">Home</h5>
+              <ul class="list-none mt-6 space-y-2 pl-0">
+                <li><a href="home1.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage1</a></li>
+                <li><a href="home2.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage2</a></li>
+                <li><a href="home3.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage3</a></li>
+                <li><a href="home4.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage4</a></li>
+                <li><a href="home5.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage5</a></li>
+              </ul>
+            </div>
+            <div class="lg:col-span-3 md:col-span-4 col-span-12">
+              <h5 class="tracking-wide text-white font-bold  ">Address</h5>
+             <p class="mt-6">123 Main St, Anytown , USA 123456</p>
+             <a href="mailto:travelo@example.com" class="text-decoration-none text-white">
+              <p class="font-semibold mt-1 hover:text-red-600 transition-all duration-500 ease-in-out"><i class="fas fa-envelope"></i> &nbsp;&nbsp;travelo@example.com</p>
+             </a>
+             <a href="tel:9876767673" class="text-decoration-none text-white"> 
+              <p class="font-semibold mt-1 hover:text-red-600 transition-all duration-500 ease-in-out"><i class="fas fa-phone"></i> &nbsp;&nbsp; +91 9876767673</p> 
+            </a>
+            
+  
             </div>
           </div>
         </div>
-        <div class="bg-slate-300">
+  
+        <div class="bg-slate-700 border-t">
           <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-            <p class="text-white text-sm text-center sm:text-left fw-bold">© 2024 Travelo —
-              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-white ml-1 fw-bold" target="_blank">All Rights Reserved</a>
+            <p class="text-white text-sm text-center sm:text-left mt-2">&copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Travelo - All Rights Reserved
             </p>
             <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-              <a class="text-white fw-bold">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <a class="text-white fw-bold" href="#">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-red-500" viewBox="0 0 24 24">
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                 </svg>
               </a>
-              <a class="ml-3 text-white fw-bold">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
+             
+              <a class="ml-3 text-white fw-bold" href="#">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
               </a>
-              <a class="ml-3 text-white fw-bold">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <a class="ml-3 text-white fw-bold" href="#">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-red-500" viewBox="0 0 24 24">
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                 </svg>
               </a>
-              <a class="ml-3 text-white fw-bold">
-                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <a class="ml-3 text-white fw-bold" href="#">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5 hover:text-red-500" viewBox="0 0 24 24">
                   <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
                   <circle cx="4" cy="4" r="2" stroke="none"></circle>
                 </svg>
