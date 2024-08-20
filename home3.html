@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="index.css">
   </head>
 <body>
+   <!-- navbar section start -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand  fw-bold fs-3" href="home1.html">T<span style="color: red;">ravelo</span></a>
@@ -116,6 +117,8 @@
       </div>
     </div>
   </div>
+   <!-- navbar section end -->
+     <!-- hero section start -->
       <div class="card mt-5">
         <img src="image/ocean-7890172_1280.jpg" class="card-img h" alt="ocean-7890172_1280" style="width: 100%; height: 700px; opacity: 0.8;">
         <div class="card-img-overlay  mt-10 ">
@@ -139,7 +142,7 @@
                   </div>
                   <div class="relative mb-4">
                     <label for="pax-number" class="leading-7 text-md text-black fw-bold">Guest</label>
-                    <input type="text" id="pax-number" name="pax-number" placeholder="2 adults- 1 children -1 room" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" oninput="validatenumber()">
+                    <input type="text" id="pax-number" name="pax-number" placeholder="Number of guest" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" oninput="validatenumber()">
                     <span id="numbererror" class="text-red-500"></span>
                   </div>
               
@@ -149,6 +152,8 @@
           </form>
         </div>
       </div>
+   <!-- hero section start -->
+    <!-- package section start -->
       <section class="text-gray-600 body-font mt-6">
         <div class="container px-5 py-2 mx-auto">
           <div class="flex flex-col">
@@ -194,6 +199,8 @@
           </div>
         </div>
       </section>
+      <!-- package section end -->
+       <!-- tour type section start -->
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-20">
@@ -285,6 +292,8 @@
           </div>
         </div>
       </section>
+        <!-- tour type section end -->
+        <!-- tour  section start -->
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-2 mx-auto">
             <h1 class="mx-auto text-black fw-bold fs-1 text-center">Famous Tourist Places </h1>
@@ -374,7 +383,8 @@
           </div>
         </div>
       </section>
-      
+       <!-- tour  section end -->
+          <!-- review  section start-->
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20 fw-bold fs-1">Review
@@ -414,6 +424,8 @@
           </div>
         </div>
       </section>
+       <!-- review  section end-->
+         <!--footer section start-->
       <footer class="bg-gray-900 text-gray-200">
         <div class="container mx-auto py-14 px-6 mt-4">
           <div class="grid md:grid-cols-12 grid-cols-1 gap-7">
@@ -494,6 +506,7 @@
           </div>
         </div>
       </footer>
+       <!--footer section end-->
       <script>
         function validatename(){
           let name=document.getElementById("destinations").value;
