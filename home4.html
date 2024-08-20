@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="index.css">
   </head>
 <body>
+   <!-- navbar section start -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand  fw-bold fs-3" href="home1.html">T<span style="color: red;">ravelo</span></a>
@@ -116,6 +117,8 @@
       </div>
     </div>
   </div>
+   <!-- navbar section end -->
+     <!-- hero section start -->
   <div class="card mt-5">
     <img src="image/t3.jpg" class="card-img h" alt="noimage" style="width: 100%; height: 700px; opacity: 0.9;">
     <div class="card-img-overlay  mt-10 ">
@@ -140,7 +143,7 @@
           </div>
           <div class="relative mb-4">
             <label for="pax-number" class="leading-7 text-md text-black fw-bold">Guest</label>
-            <input type="text" id="pax-number" name="pax-number" placeholder="2 adults- 1 children -1 room" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" oninput="validatenumber()">
+            <input type="text" id="pax-number" name="pax-number" placeholder="Number of guest" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" oninput="validatenumber()">
             <span id="numbererror" class="text-red-500"></span>
           </div>
           <button class="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg fw-bold">Search</button>
@@ -149,6 +152,8 @@
             </form>
   </div>
   </div>
+  <!-- hero section start -->
+    <!-- package section start -->
   <section class="text-gray-600 body-font">
     <div class="container px-5 py-20 mx-auto">
       <h1 class="sm:text-xl text-2xl font-medium title-font text-center text-red-500 mb-2 fw-bold">Special Offer</h1>
@@ -197,6 +202,8 @@
       </div>
     </div>
   </section>
+   <!-- package section end -->
+      <!--tour package section start -->
   <section class="text-gray-600 body-font">
     <div class="container px-5 py-20 mx-auto">
       <h1 class="sm:text-xl text-2xl font-medium title-font text-center text-red-500 mb-2 fw-bold">Choose Your Package</h1>
@@ -221,6 +228,8 @@
         </div>
     </div>
   </section>
+    <!--tour package section end -->
+      <!-- banner section start -->
   <section class="text-gray-600 body-font bg-gray-50">
     <div class="container px-5 py-24 mx-auto" data-aos="zoom-in-up">
       <div class="flex flex-col text-center w-full mb-10">
@@ -278,6 +287,8 @@
       </div>
     </div>
   </section>
+     <!-- banner section end -->
+       <!--review section start -->
   <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
       <div class="sm:text-3xl text-2xl font-medium title-font mx-auto text-center text-gray-900 mb-20 fw-bold fs-1">Review
@@ -292,8 +303,8 @@
               <img src="image/pic01.jpg" class="rounded-full" alt="noimage">
             </div>
             <div class="flex-grow">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Shooting Stars</h2>
-              <p class="leading-relaxed text-base">This tour was a dream come true! Our guide was knowledgeable and passionate about the city, and we saw hidden gems.</p>
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Mary</h2>
+              <p class="leading-relaxed text-base"> Our guide was knowledgeable and passionate about the city, and we saw hidden gems.</p>
             
             </div>
           </div>
@@ -303,11 +314,11 @@
         data-aos-duration="500">
           <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
             <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-              <img src="image/pic01.jpg" class="rounded-full" alt="noimage">
+              <img src="image/pic02.jpg" class="rounded-full" alt="noimage">
             </div>
             <div class="flex-grow">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">The Catalyzer</h2>
-              <p class="leading-relaxed text-base">This tour exceeded all my expectations. The pace was perfect, the sights were breathtaking, and our guide was friendly and accommodating.</p>
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Sarah</h2>
+              <p class="leading-relaxed text-base">This tour exceeded all my expectations. The pace was perfect and our guide was friendly and accommodating.</p>
             
             </div>
           </div>
@@ -315,6 +326,8 @@
       </div>
     </div>
   </section>
+   <!--review section end-->
+      <!-- banner2 section start -->
   <section class="text-gray-600 body-font bg-gray-100 mt-3">
     <div class="container mx-auto flex flex-col px-5 py-20 justify-center items-center" data-aos="fade-down">
       <div class="w-full md:w-2/3 flex flex-col mb-10 items-center text-center">
@@ -331,6 +344,8 @@
       </div>
     </div>
   </section>
+     <!-- banner2 section end -->
+      <!-- footer section start -->
   <footer class="bg-gray-900 text-gray-200">
     <div class="container mx-auto py-14 px-6 mt-4">
       <div class="grid md:grid-cols-12 grid-cols-1 gap-7">
@@ -411,6 +426,7 @@
       </div>
     </div>
   </footer>
+   <!-- footer section end -->
   <script>
     function validatename(){
       let name=document.getElementById("destinations").value;
