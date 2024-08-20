@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Detail</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
+    <link rel="icon" href="image/favicon-32x32.png" type="image/jpeg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+   
     <link rel="stylesheet" href="index.css">
     <style>
       .card-img-overlay{
@@ -16,30 +18,35 @@
         transform: translate(-50%, -50%);
         text-align: center;
     }
+ 
     </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand  fw-bold fs-3" href="#">T<span style="color: red;">ravelo</span></a>
-      </button>
+      <a class="navbar-brand  fw-bold fs-3" href="home1.html">T<span style="color: red;">ravelo</span></a>
       <div class="text-end d-flex ">
-        <div>  <a class="btn fs-4" href="register.html">  <i class="fas fa-registered text-red-500"></i>  </a>
+        <div>
+          <a class="btn fs-4" href="register.html">
+            <i class="fas fa-registered text-red-500"></i>
+          </a>
         </div>
-        <div>  <a class="btn fs-4" href="login.html">  <i class="fas fa-user text-red-500"></i>  </a>
+        <div>
+          <a class="btn fs-4" href="login.html">
+            <i class="fas fa-user text-red-500"></i>
+          </a>
         </div>
-       <div>  <a class="btn fs-4 " data-bs-toggle="offcanvas" href="#offcanvasNavbar" 
-        role="button" aria-controls="#offcanvasNavbar">  <i class="fas fa-bars text-red-500"></i>  </a>
+       <div>
+        <a class="btn fs-4 " data-bs-toggle="offcanvas" href="#offcanvasNavbar" role="button" aria-controls="offcanvasNavbar">
+          <i class="fas fa-bars text-red-500"></i>
+        </a>
       </div>
       </div>
-    
-  
     </div>
   </nav>
-  <div class="navbar bg-body-tertiary fixed-top">
+  <div class="navbar bg-body-tertiary">
     <div class="container-fluid">
-     
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
         <div class="offcanvas-header">
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -104,35 +111,40 @@
                 Tour Guide
               </a>
             </li>
+            <li class="nav-item dropdown w-100">
+              <a class="nav-link dropdown-toggle w-100  hover:bg-green-400 px-3 " href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu border-0">
+                <li><a class="dropdown-item fw:bold hover:bg-white px-12 hover:text-red-500" href="packagepage.html">Package Type</a></li>
+                <li><a class="dropdown-item fw:bold  hover:bg-white px-12 hover:text-red-500" href="button.html">Button</a></li>
+              </ul>
+            </li>
           </ul>
          
         </div>
       </div>
     </div>
   </div>
-      <div class="card ">
-        <img src="image/ocean-7890172_1280.jpg" class="card-img h" alt="..." style="width: 100%; height: 350px; opacity: 0.9;">
+      <div class="card mt-5">
+        <img src="image/ocean-7890172_1280.jpg" class="card-img h" alt="ocean" style="width: 100%; height: 350px; opacity: 0.9;">
         <div class="card-img-overlay ">
-          <h5 class="card-title  text-white fw-bold  text-5xl mt-8">Blog Detail</h5>
+          <h5 class="card-title  text-white fw-bold  text-3xl lg:text-5xl mt-8">Blog Detail</h5>
         </div>
       </div>
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
           <div class="lg:w-2/3 mx-auto">
-            <h1 class="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900 fw-bold text-uppercase">Lorem ipsum dolor sit amet consectetur.</h1>
+            <h2 class="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900 fw-bold ">Global Expeditions: Explore the World's Wonders</h2>
             <p class="fw-bold mb-3">05 Aug 2024 &nbsp; [Singapore]</p>
-            <p class="mb-8 leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi deleniti ducimus fugiat obcaecati eligendi atque illum vero! Consequatur fugit iste veniam quia nobis nisi placeat veritatis, minus eum mollitia!
-                Sequi a voluptates laboriosam maiores quisquam reiciendis, atque vel aperiam nemo repellat dolor cupiditate quidem dolore tempore explicabo ratione eos excepturi tenetur! Sapiente dignissimos neque animi officiis blanditiis quis aspernatur.</p>
+            <p class="mb-8 leading-relaxed">Welcome to [Global Expeditions: Explore the World's Wonders], your ultimate travel companion! We're passionate about exploring the world's most breathtaking destinations, immersing ourselves in diverse cultures, and uncovering hidden treasures. Our blog is dedicated to inspiring your next adventure, whether you're a seasoned traveler or just starting to plan your first journey.</p>
             <div class="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
-              <img alt="gallery" class="w-full  h-full object-center block  absolute inset-0" src="image/skyscrapers-.jpg"> 
+              <img alt="skyscrapers" class="w-full  h-full object-center block  absolute inset-0" src="image/skyscrapers-.jpg"> 
             </div>
             
-              <p class="mb-8 leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi deleniti ducimus fugiat obcaecati eligendi atque illum vero! Consequatur fugit iste veniam quia nobis nisi placeat veritatis, minus eum mollitia!
-              Sequi a voluptates laboriosam maiores quisquam reiciendis, atque vel aperiam nemo repellat dolor cupiditate quidem dolore tempore explicabo ratione eos excepturi tenetur! Sapiente dignissimos neque animi officiis blanditiis quis aspernatur.</p>
-              <p class="mb-8 leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi deleniti ducimus fugiat obcaecati eligendi atque illum vero! Consequatur fugit iste veniam quia nobis nisi placeat veritatis, minus eum mollitia!
-                Sequi a voluptates laboriosam maiores quisquam reiciendis, atque vel aperiam nemo repellat dolor cupiditate quidem dolore tempore explicabo ratione eos excepturi tenetur! Sapiente dignissimos neque animi officiis blanditiis quis aspernatur.</p>
-              <p class="mb-8 leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi deleniti ducimus fugiat obcaecati eligendi atque illum vero! Consequatur fugit iste veniam quia nobis nisi placeat veritatis, minus eum mollitia!
-                    Sequi a voluptates laboriosam maiores quisquam reiciendis, atque vel aperiam nemo repellat dolor cupiditate quidem dolore tempore explicabo ratione eos excepturi tenetur! Sapiente dignissimos neque animi officiis blanditiis quis aspernatur.</p>
+              <p class="mb-8 leading-relaxed">On our blog, you'll find a wealth of travel inspiration, expert tips, and stunning photography from around the globe. From majestic landscapes to vibrant cities, we'll take you on a journey of discovery, highlighting the best places to visit, things to do, and experiences to be had. Whether you're looking for adventure, relaxation, or cultural immersion, we've got you covered.</p>
+              <p class="mb-8 leading-relaxed">Our goal is to fuel your wanderlust and empower you to explore the world with confidence. We believe that travel has the power to transform and enrich our lives, and we're committed to sharing our passion with you. Through our stories, guides, and photography, we hope to inspire you to venture off the beaten path, try new things, and make unforgettable memories.</p>
+             
               </div>
             </div>
       </section>
@@ -157,7 +169,7 @@
               <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                 <div class="w-24 h-24 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
                    
-                        <img src="image/pic01.jpg" class="rounded-full" alt="">
+                        <img src="image/pic01.jpg" class="rounded-full" alt="pic01">
                     
                 </div>
                 <div class="flex flex-col items-center text-center justify-center">
@@ -166,8 +178,8 @@
                 </div>
               </div>
               <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0  sm:text-left">
-                <p class="text-base">December 10,2024 &nbsp;&nbsp;&nbsp; 11:06 PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-500">REPLY</span></p>
-                <p class="leading-relaxed text-lg mb-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eius a? Doloribus, iure aperiam vel et consequuntur, reiciendis eius maiores quisquam hic eaque perferendis ut perspiciatis sed nam id officia?</p>
+                <p class="text-base">December 10,2024 &nbsp;&nbsp;&nbsp; 11:06 PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><span class="text-red-500">REPLY</span></a></p>
+                <p class="leading-relaxed text-lg mb-4 ">Thanks for sharing your own experience with Singapore! We'd love to hear more.</p>
               </div>
             </div>
           </div>
@@ -181,7 +193,7 @@
               <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                 <div class="w-24 h-24 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
                    
-                        <img src="image/pic03.jpg" class="rounded-full" alt="">
+                        <img src="image/pic03.jpg" class="rounded-full" alt="pic03">
                     
                 </div>
                 <div class="flex flex-col items-center text-center justify-center">
@@ -190,8 +202,8 @@
                 </div>
               </div>
               <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0  sm:text-left">
-                <p class="text-base">January 15,2025 &nbsp;&nbsp;&nbsp; 1:06 PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-500">REPLY</span></p>
-                <p class="leading-relaxed text-lg mb-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eius a? Doloribus, iure aperiam vel et consequuntur, reiciendis eius maiores quisquam hic eaque perferendis ut perspiciatis sed nam id officia?</p>
+                <p class="text-base">January 15,2025 &nbsp;&nbsp;&nbsp; 1:06 PM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><span class="text-red-500">REPLY</span></a></p>
+                <p class="leading-relaxed text-lg mb-4 ">Loved your post on 'Top 10 things to do in Singapore'! Your Tips and recommendation were so helpful in planning my trip. </p>
               </div>
             </div>
           </div>
@@ -205,7 +217,7 @@
             <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
               <div class="w-24 h-24 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
                  
-                      <img src="image/pic02.jpg" class="rounded-full" alt="">
+                      <img src="image/pic02.jpg" class="rounded-full" alt="pic02">
                   
               </div>
               <div class="flex flex-col items-center text-center justify-center">
@@ -214,8 +226,8 @@
               </div>
             </div>
             <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0  sm:text-left">
-              <p class="text-base">February 25,2024 &nbsp;&nbsp;&nbsp; 10:06 AM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-red-500">REPLY</span></p>
-              <p class="leading-relaxed text-lg mb-4 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eius a? Doloribus, iure aperiam vel et consequuntur, reiciendis eius maiores quisquam hic eaque perferendis ut perspiciatis sed nam id officia?</p>
+              <p class="text-base">February 25,2024 &nbsp;&nbsp;&nbsp; 10:06 AM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><span class="text-red-500">REPLY</span></a></p>
+              <p class="leading-relaxed text-lg mb-4 ">Would love to see more posts on sustainable travel and eco friendly destination.</p>
             </div>
           </div>
         </div>
@@ -229,132 +241,216 @@
     <section class="text-gray-600 body-font relative">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-12">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Leave a Comment</h1>
+            <h2 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Leave a Comment</h2>
           </div>
-          <div class="lg:w-1/2 md:w-2/3 mx-auto">
-            <div class="flex flex-wrap -m-2">
-              <div class="p-2 w-1/2">
-                <div class="relative">
-                  <label for="name" class="leading-7 text-sm text-gray-600">First Name</label>
-                  <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          <form  id="myform" onsubmit="return validateform(event)" method="post">
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+              <div class="flex flex-wrap -m-2">
+                <div class="p-2 lg:w-1/2 w-full">
+                  <div class="relative">
+                    <label for="name" class="leading-7 text-sm text-gray-600">First Name</label>
+                    <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 
+                    focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 
+                    ease-in-out" oninput="validatename()">
+                    <span id="nameerror" class="text-red-500"></span>
+                  </div>
                 </div>
-              </div>
-              <div class="p-2 w-1/2">
-                <div class="relative">
-                  <label for="lname" class="leading-7 text-sm text-gray-600">Last Name</label>
-                  <input type="text" id="lname" name="lname" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                <div class="p-2 lg:w-1/2 w-full">
+                  <div class="relative">
+                    <label for="lname" class="leading-7 text-sm text-gray-600">Last Name</label>
+                    <input type="text" id="lname" name="lname" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 
+                    focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 
+                    leading-8 transition-colors duration-200 ease-in-out" oninput="validatelname()">
+                    <span id="lnameerror" class="text-red-500"></span>
+                  </div>
                 </div>
-              </div>
-              <div class="p-2 w-full">
-                <div class="relative">
-                  <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-                  <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                <div class="p-2 w-full">
+                  <div class="relative">
+                    <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                    <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 
+                    focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 
+                    leading-8 transition-colors duration-200 ease-in-out" oninput="validateemail()">
+                    <span id="emailerror" class="text-red-500"></span>
+                  </div>
                 </div>
-              </div>
-              <div class="p-2 w-full">
-                <div class="relative">
-                  <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-                  <textarea id="message" name="message"  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                <div class="p-2 w-full">
+                  <div class="relative">
+                    <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                    <textarea id="message" name="message"  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 
+                    focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 
+                    resize-none leading-6 transition-colors duration-200 ease-in-out" oninput="validatemessage()"></textarea>
+                    <span id="messageerror" class="text-red-500"></span>
+                  </div>
                 </div>
-              </div>
-              <div class="p-2 w-full">
-                <button class="flex mx-auto text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">Send</button>
+                <div class="p-2 w-full">
+                  <input type="submit" class="flex mx-auto text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg" value="Submit">
+                </div>
               </div>
             </div>
+          
+          </form>
+          <div class="mt-3 ">
+            <p id="thank" class="text-white text-xl lg:text-2xl text-center border border-green-100 bg-green-400 py-3 rounded fw-bold" style="display: none;">Thank You For Your Comment!</p>
           </div>
+       
         </div>
       </section>
-      <footer class="text-white body-font bg-slate-400">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap md:text-left  order-first">
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
-              <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Useful Links</h2>
-              <nav class="list-none mb-10 ">
-                <li>
-                  <a class=" hover:text-red-500" href="package.html">Destination</a>
-                </li>
-                <li>
-                  <a class=" hover:text-red-500" href="hotel.html">Hotel</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="blog.html">Blog</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="contact.html">Contact Us</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="gallery.html" >Gallery</a>
-                </li>
-              </nav>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
-              <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Home</h2>
-              <nav class="list-none mb-10 ">
-                <li>
-                  <a class=" hover:text-red-500" href="home1.html">HomePage1</a>
-                </li>
-                <li>
-                  <a class=" hover:text-red-500" href="home2.html">HomePage2</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="home3.html">HomePage3</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="home4.html">HomePage4</a>
-                </li>
-                <li>
-                  <a class="  hover:text-red-500" href="home5.html" >HomePage5</a>
-                </li>
-              </nav>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
-              <h2 class="title-font font-medium  tracking-widest text-md mb-3 fw-bold ">Address</h2>
-              <nav class="list-none mb-10 ">
-               <p>Lorem ipsum dolor sit.</p>
-               <p>+91 4545454546</p>
-               <p>xys@gmail.com</p>
-              </nav>
-            </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">  <span class=" text-xl text-white fw-bold">T<span style="color: red;">ravelo</span> </span></h2>
-              <p class="text-white text-md mt-1 md:text-left ">Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="bg-slate-300">
-          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-            <p class="text-white text-sm text-center sm:text-left fw-bold">© 2024 Travelo —
-              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-white ml-1 fw-bold" target="_blank">All Rights Reserved</a>
+    <footer class="bg-gray-900 text-gray-200">
+      <div class="container mx-auto py-14 px-6">
+        <div class="grid md:grid-cols-12 grid-cols-1 gap-7">
+          <div class="lg:col-span-4 col-span-12">
+            <a href="home1.html" class="text-decoration-none">
+              <h2 class="text-sm mb-3 fs-3 text-white fw-bold">T<span style="color: red;">ravelo</span></h2>
+            </a>
+            <p class="mt-6">Explore the world with Travelo,your ultimate guide to discovering new destinations,immersing yourself
+              in different culture, and creating unforgettable travel experiences.
             </p>
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-              <a class="text-white fw-bold">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                </svg>
-              </a>
-              <a class="ml-3 text-white fw-bold">
-                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                </svg>
-              </a>
-              <a class="ml-3 text-white fw-bold">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                </svg>
-              </a>
-              <a class="ml-3 text-white fw-bold">
-                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                </svg>
-              </a>
-            </span>
+          </div>
+          <div class="lg:col-span-2 md:col-span-4 col-span-12">
+            <h5 class="tracking-wide text-white font-bold ">Useful Links</h5>
+            <ul class="list-none mt-6 space-y-2 pl-0">
+              <li><a href="package.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Destination</a></li>
+              <li><a href="hotel.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Hotel</a></li>
+              <li><a href="blog.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Blog</a></li>
+              <li><a href="contact.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Contact Us</a></li>
+              <li><a href="gallery.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">Gallery</a></li>
+            </ul>
+          </div>
+          <div class="lg:col-span-3 md:col-span-4 col-span-12">
+            <h5 class="tracking-wide text-white font-bold ">Home</h5>
+            <ul class="list-none mt-6 space-y-2 pl-0">
+              <li><a href="home1.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage1</a></li>
+              <li><a href="home2.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage2</a></li>
+              <li><a href="home3.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage3</a></li>
+              <li><a href="home4.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage4</a></li>
+              <li><a href="home5.html" class="text-gray-100 hover:text-red-600 transition-all duration-500 ease-in-out">HomePage5</a></li>
+            </ul>
+          </div>
+          <div class="lg:col-span-3 md:col-span-4 col-span-12">
+            <h5 class="tracking-wide text-white font-bold  ">Address</h5>
+           <p class="mt-6">123 Main St, Anytown , USA 123456</p>
+           <a href="mailto:travelo@example.com" class="text-decoration-none text-white">
+            <p class="font-semibold mt-1 hover:text-red-600 transition-all duration-500 ease-in-out"><i class="fas fa-envelope"></i> &nbsp;&nbsp;travelo@example.com</p>
+           </a>
+           <a href="tel:9876767673" class="text-decoration-none text-white"> 
+            <p class="font-semibold mt-1 hover:text-red-600 transition-all duration-500 ease-in-out"><i class="fas fa-phone"></i> &nbsp;&nbsp; +91 9876767673</p> 
+          </a>
+          
+
           </div>
         </div>
-      </footer>
-      
+      </div>
+
+      <div class="bg-slate-700 border-t">
+        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+          <p class="text-white text-sm text-center sm:text-left mt-2">&copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Travelo - All Rights Reserved
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+            <a class="text-white fw-bold" href="#">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-red-500" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+           
+            <a class="ml-3 text-white fw-bold" href="#">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+            </a>
+            <a class="ml-3 text-white fw-bold" href="#">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 hover:text-red-500" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-white fw-bold" href="#">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5 hover:text-red-500" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+      <script>
+        function validatename(){
+          let name=document.getElementById("name").value;
+          let nameerror=document.getElementById("nameerror");
+          if(name===""){
+            nameerror.textContent="Name is required";
+            return false;
+          }
+          else{
+            nameerror.textContent="";
+            return true;
+          }
+        }
+        function validatelname(){
+          let lname=document.getElementById("lname").value;
+          let lnameerror=document.getElementById("lnameerror");
+          if(lname===""){
+            lnameerror.textContent="Last Name is required";
+            return false;
+          }
+          else{
+            lnameerror.textContent="";
+            return true;
+          }
+        }
+        function validatemessage(){
+          let message=document.getElementById("message").value;
+          let messageeerror=document.getElementById("messageerror");
+          if(message===""){
+            messageeerror.textContent="Message is required";
+            return false;
+          }
+          else{
+            messageeerror.textContent="";
+            return true;
+          }
+        }
+        function validateemail(){
+          let email=document.getElementById("email").value;
+          let emailerror=document.getElementById("emailerror");
+          let emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if(email===""){
+            emailerror.textContent="Email is required";
+            return false;
+          }
+          else if(!emailPattern.test(email)){
+            emailerror.textContent="Invalid email format";
+            return false;
+          }
+          else{
+            emailerror.textContent="";
+            return true;
+          }
+        }
+        function validateform(event){
+          event.preventDefault();
+          let isname=validatename();
+          let islname=validatelname();
+          let isemail=validateemail();
+          let ismessage=validatemessage();
+          if(isname && islname && isemail && ismessage){
+            document.getElementById("thank").style.display="block";
+           document.getElementById("name").value="";
+           document.getElementById("lname").value="";
+           document.getElementById("email").value="";
+           document.getElementById("message").value="";
+           return true;
+          }
+          else{
+            
+            document.getElementById("thank").style.display="none";
+            return false;
+            
+          }
+        }
+      </script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
 </body>
 </html>
